@@ -1,22 +1,116 @@
-#overlay-left-top{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-}
-
-#overlay-right-top{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-}
-
-#overlay-left-bot{
-    position: absolute;
-    left: 10px;
-    bottom: 10px;
-}
-zindex
-#overlay-menu{
-    width: 100%;
+html{
     height: 100%;
+    background-color: #0C1520;
 }
+
+body{
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+#layout-menu-side{
+    flex: 1;
+    height: 92vh;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#layout-menu-upper{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 49px;
+}
+
+#line-h{
+    margin-top: 0.4px;
+    flex: 1;
+    height: auto;
+    width: auto;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #E6AC19;
+    border-top-style: solid;
+    border-top-width: thin;
+    border-top-color: #E6AC19;
+}
+
+#line-v{
+    margin-left: 0.4px;
+    flex: 1;
+    height: auto;
+    width: 80.6px;
+    border-left-style: solid;
+    border-left-width: thin;
+    border-left-color: #E6AC19;
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #E6AC19;
+}
+
+.side-bar-assets{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#side-bar-space{
+    height: auto;
+    width: auto;
+    flex: 1;
+}
+
+#side-bar-top{
+    display: flex;
+    height: 49px;
+}
+
+#side-bar-bot{
+    display: flex;
+    height: 92vh;
+}
+
+#layout-side-bar{
+    position: absolute;
+    width: 0vw;
+    left: 92px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: width .5s ease-in-out;
+}
+#layout-side-bar:hover{
+    transition: width .5s ease-in-out;
+    width: 20vw;
+}
+
+#layout-side-bar{
+ flex: 1;
+}
+
+#side-bar-asset-space1{
+    flex: 1;
+    height: auto;
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #E6AC19;
+}
+
+#side-bar-asset-space2{
+    flex: 1;
+    height: auto;
+    border-right-style: solid;
+    border-right-width: thin;
+    border-right-color: #E6AC19;
+}
+
+
