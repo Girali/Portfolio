@@ -1,12 +1,24 @@
 html{
     height: 100%;
-    background-color: #0C1520;
+    background: linear-gradient(180deg, #0B1D34 0%, rgba(11, 29, 52, 0.49) 100%), url(assets/img/digital-art/9.jpg);
 }
 
 body{
     margin: 0;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+}
+
+svg, path{
+    z-index: 3;
+}
+
+#menu-background{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 30vw;
+    background: linear-gradient(90deg, #0C1520 0%, rgba(12, 21, 32, 0.5625) 84.9%, rgba(12, 21, 32, 0) 100%);
 }
 
 #layout-menu-side{
@@ -20,7 +32,7 @@ body{
 }
 
 #layout-menu-upper{
-    margin-top: 10px;
+    padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     display: flex;
@@ -30,6 +42,7 @@ body{
 }
 
 #line-h{
+    z-index: 3;
     margin-top: 0.4px;
     flex: 1;
     height: auto;
@@ -43,6 +56,7 @@ body{
 }
 
 #line-v{
+    z-index: 3;
     margin-left: 0.4px;
     flex: 1;
     height: auto;
@@ -80,6 +94,7 @@ body{
 }
 
 #layout-side-bar{
+    flex: 1;
     position: absolute;
     width: 0vw;
     left: 92px;
@@ -93,11 +108,8 @@ body{
     width: 20vw;
 }
 
-#layout-side-bar{
- flex: 1;
-}
-
 #side-bar-asset-space1{
+    z-index: 3;
     flex: 1;
     height: auto;
     border-right-style: solid;
@@ -106,6 +118,7 @@ body{
 }
 
 #side-bar-asset-space2{
+    z-index: 3;
     flex: 1;
     height: auto;
     border-right-style: solid;
