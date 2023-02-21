@@ -3,12 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <title>WebGL Demo</title>
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/augmented-ui@2/augmented-ui.min.css">
+    <link href="styleSheet.css" type="text/css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body>
+<div id="layout-menu">
+    <div id="layout-menu-upper">
+        <div id="menu-button" data-augmented-ui="tl-round"></div>
+        <div id="menu-header" data-augmented-ui="tr-round br-clip"></div>
+    </div>
+    <div id="layout-menu-side" data-augmented-ui="bl-clip"></div>
+    <div id="layout-menu-side-bar" data-augmented-ui="tr-clip r-clip-y br-round"></div>
+    <div id="layout-menu-background-left"  class="layout-menu-background-left-close" data-augmented-ui="tl-round bl-clip"></div>
+    <div id="layout-menu-background-right" class="layout-menu-background-right-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
+</div>
+</body>
+</html>
+
+<!--
+
     <div id="menu-background"></div>
     <div id="layout-menu-upper">
         <svg width="83" height="49" viewBox="0 0 83 49" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +40,7 @@
         <svg width="83" height="72" viewBox="0 0 83 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M82.5 0v70.642H71.642a10 10 0 0 1-7.07-2.929L3.928 7.071A10 10 0 0 1 1 0" stroke="#E6AC19"/>
         </svg>
-</div>
+    </div>
     <div id="layout-side-bar">
         <div id="side-bar-top">
             <div id="side-bar-space">
@@ -44,10 +60,7 @@
             </div>
         </div>
     </div>
-</body>
-</html>
 
-<!--
     <script src="three.js"></script>
     <script src="app.js"></script>
     <path d="M0 48.5h56.632a10 10 0 0 0 7.336-3.204l25.474-27.5C95.372 11.394 90.832 1 82.106 1H0" stroke="#E6AC19"/>

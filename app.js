@@ -1,12 +1,13 @@
 $(document).ready(function(){
-    $("#layout-side-bar").mouseenter(function(){
-        $("#menu-background").finish().animate({
-
-            opacity: "1"
-        }, 500);
+    $("#layout-menu-side-bar").mouseenter(function(){
+        $("#layout-menu-background-left").addClass("layout-menu-background-left-open");
+        $("#layout-menu-background-right").addClass("layout-menu-background-right-open");
+        $("#layout-menu-background-left").removeClass("layout-menu-background-left-close");
+        $("#layout-menu-background-right").removeClass("layout-menu-background-right-close");
     }).mouseleave(function(){
-        $("#menu-background").finish().animate({
-            opacity: "0"
-        },500);
+        $("#layout-menu-background-left").removeClass("layout-menu-background-left-open");
+        $("#layout-menu-background-right").removeClass("layout-menu-background-right-open");
+        $("#layout-menu-background-left").addClass("layout-menu-background-left-close");
+        $("#layout-menu-background-right").addClass("layout-menu-background-right-close");
     });
 });

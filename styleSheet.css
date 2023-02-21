@@ -1,0 +1,133 @@
+html{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #0B1D34 0%, rgba(11, 29, 52, 0.49) 100%), url(assets/img/digital-art/9.jpg);
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#layout-menu{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#layout-menu-upper{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu-button{
+    z-index: 3;
+
+    width: 80px;
+    height: 5vh;
+
+    --aug-border: initial;
+    --aug-border-all: 1px;
+    --aug-border-bg: #E6AC19;
+}
+#menu-header{
+    z-index: 3;
+
+    width: 85vw;
+    height: 5vh;
+
+    --aug-border: initial;
+    --aug-border-all: 1px;
+    --aug-border-bg: #E6AC19;
+    --aug-border-left: 0px;
+    --aug-br: 33px;
+}
+#layout-menu-side{
+    z-index: 3;
+
+    width: 80px;
+    height: 90vh;
+
+    --aug-border: initial;
+    --aug-border-all: 1px;
+    --aug-border-bg: #E6AC19;
+    --aug-border-top: 0px;
+    --aug-bl: 50px;
+}
+
+#layout-menu-side-bar{
+    z-index: 3;
+
+    position: absolute;
+    height: 95vh;
+    width: 5vh;
+    top: 0px;
+    left: 80px;
+
+    --aug-border: initial;
+    --aug-border-all: 1px;
+    --aug-border-bg: #E6AC19;
+    --aug-border-left: 0px;
+    --aug-tr:5vh;
+    --aug-r-center: 30%;
+    --aug-r-extend1: 20vh;
+
+    transition: width 0.5s ease-in-out;
+}
+
+#layout-menu-side-bar:hover{
+    transition: width 0.5s ease-in-out;
+    width: 25vh;
+}
+
+#layout-menu-background-left{
+    position: absolute;
+    top: 0px;
+
+    width: 80px;
+    height: 95vh;
+
+    --aug-inlay-all: 0px;
+    --aug-inlay: initial;
+    --aug-inlay-bg: #0B1D34;
+    --aug-bl: 50px;
+}
+
+#layout-menu-background-right{
+    position: absolute;
+    height: 95vh;
+    top: 0px;
+    left: 80px;
+
+    --aug-inlay-all: 0px;
+    --aug-inlay: initial;
+    --aug-inlay-bg: #0B1D34;
+    --aug-tr:5vh;
+    --aug-r-center: 30%;
+    --aug-r-extend1: 20vh;
+}
+
+.layout-menu-background-right-close{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    width: 5vh;
+}
+
+.layout-menu-background-left-close{
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.layout-menu-background-right-open{
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+    width: 25vh;
+}
+
+.layout-menu-background-left-open{
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+}
