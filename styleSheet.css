@@ -1,7 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+:root{
+    --neonblue: #4791EB;
+
+    --blue-900: rgb(12, 21, 32);
+    --blue-800: rgb(11, 29, 52);
+    --blue-800-80: rgba(11, 29, 52, 80%);
+    --blue-800-10: rgba(11, 29, 52, 10%);
+    --blue-700: rgb(16, 39, 66);
+    --blue-600: rgb(28, 49, 75);
+    --blue-500: rgb(35, 64, 100);
+    --blue-400: rgb(69, 116, 162);
+    --blue-300: rgb(104, 133, 168);
+    --blue-200: rgb(169, 185, 194);
+    --blue-100: rgb(206, 218, 225);
+
+    --orange-900: rgb(44, 19, 12);
+    --orange-800: rgb(95, 47, 3);
+    --orange-800-75: rgba(95, 47, 3, 75%);
+    --orange-700: rgb(157, 83, 36);
+    --orange-600: rgb(197, 138, 43);
+    --orange-500: rgb(230, 172, 25);
+    --orange-500-75: rgb(230, 172, 25, 75%);
+    --orange-400: rgb(251, 213, 118);
+    --orange-300: rgb(251, 228, 145);
+    --orange-200: rgb(255, 248, 214);
+    --orange-100: rgb(255, 254, 240);
+
+    --white-900: rgb(29, 16, 9);
+    --white-800: rgb(58, 49, 44);
+    --white-700: rgb(87, 73, 67);
+    --white-600: rgb(110, 102, 94);
+    --white-500: rgb(140, 131, 121);
+    --white-400: rgb(161, 156, 145);
+    --white-300: rgb(185, 181, 172);
+    --white-200: rgb(208, 206, 200);
+    --white-100: rgb(231, 231, 228);
+}
+
 html{
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, #0B1D34 0%, rgba(11, 29, 52, 0.49) 100%), url(assets/img/digital-art/9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-image:
+            repeating-linear-gradient(200deg, var(--blue-800-10), var(--blue-800-10) 10px, transparent 10px, transparent 20px)
+    ,            url("assets/img/background.svg");
+    background-attachment: fixed;
+
 }
 
 body{
@@ -11,9 +57,10 @@ body{
 }
 
 #layout-menu{
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 10px;
+    z-index: 4;
 }
 
 #layout-menu-upper{
@@ -23,21 +70,136 @@ body{
     flex-direction: row;
 }
 
+#content{
+    padding-top: 10px;
+    padding-left: 90px;
+}
+
+#content-main{
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-right: 10vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.content-box{
+    margin: 2.5% 0 0 2.5%;
+    aspect-ratio: .95;
+    width: 25rem;
+    background: linear-gradient(0deg, var(--orange-500-75) -0.12%, var(--orange-800-75) 62.67%);
+    --aug-border: initial;
+    --aug-border-all: 3px;
+    --aug-border-bg: linear-gradient(0deg, var(--orange-500) -21.61%, var(--orange-800) 100.12%);
+    --aug-round-bl2: initial;
+    --aug-clip-bl1: initial;
+    --aug-br: 33px;
+    --aug-tr: 33px;
+    --aug-tl: 60px;
+    --aug-r: 13px;
+    --aug-r-center: 170px;
+    --aug-r-extend1: 150px;
+    --aug-bl1: 10px;
+    --aug-bl-extend1: 50%;
+    --aug-bl2: 33px;
+}
+
+.aug-blue-shadow{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0 0 5px var(--blue-800)) drop-shadow(0 0 5px var(--blue-800))  drop-shadow(0 0 5px var(--blue-800)) ;
+}
+
+.content-box-content-border{
+    position: absolute;
+    height: 85%;
+    width: 100%;
+
+    --aug-border: initial;
+    --aug-border-all: 3px;
+    --aug-border-bg: linear-gradient(180deg, var(--blue-800) -20.74%, var(--neonblue) 100.12%);
+    --aug-round-bl2: initial;
+    --aug-clip-bl1: initial;
+    --aug-br: 33px;
+    --aug-tr: 33px;
+    --aug-tl: 60px;
+    --aug-r: 13px;
+    --aug-r-center: 170px;
+    --aug-r-extend1: 150px;
+    --aug-bl1: 10px;
+    --aug-bl-extend1: 50%;
+    --aug-bl2: 33px;
+}
+
+.content-box-content{
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    background: linear-gradient(180deg, var(--blue-500) -66.63%, var(--blue-700) 62.93%);
+    --aug-border: initial;
+    --aug-border-all: 3px;
+    --aug-border-bg: linear-gradient(180deg, var(--blue-800) -20.74%, var(--neonblue) 100.12%);
+    --aug-round-bl2: initial;
+    --aug-clip-bl1: initial;
+    --aug-br: 33px;
+    --aug-tr: 33px;
+    --aug-tl: 60px;
+    --aug-r: 13px;
+    --aug-r-center: 170px;
+    --aug-r-extend1: 150px;
+    --aug-bl1: 10px;
+    --aug-bl-extend1: 50%;
+    --aug-bl2: 33px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.content-box-content img{
+    height: 100%;
+}
+
+.content-box-title{
+    position: absolute;
+    bottom: 5px;
+    height: 15%;
+    width: 100%;
+
+    font-family: 'Iceland';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 62px;
+    text-align: center;
+    color: var(--blue-800);
+
+    text-shadow: 0px 0px 10px #E6AC19;
+
+}
+
 #menu-button{
     z-index: 3;
+
+    background: var(--blue-800-80);
 
     width: 80px;
     height: 5vh;
 
     --aug-border: initial;
     --aug-border-all: 1px;
-    --aug-border-bg: #E6AC19;
+    --aug-border-bg: var(--orange-500);
 }
 #menu-header{
     z-index: 3;
 
     width: 85vw;
     height: 5vh;
+
+    background: var(--blue-800-80);
 
     --aug-border: initial;
     --aug-border-all: 1px;
@@ -51,9 +213,11 @@ body{
     width: 80px;
     height: 90vh;
 
+    background: var(--blue-800-80);
+
     --aug-border: initial;
     --aug-border-all: 1px;
-    --aug-border-bg: #E6AC19;
+    --aug-border-bg: var(--orange-500);
     --aug-border-top: 0px;
     --aug-bl: 50px;
 }
@@ -69,7 +233,7 @@ body{
 
     --aug-border: initial;
     --aug-border-all: 1px;
-    --aug-border-bg: #E6AC19;
+    --aug-border-bg: var(--orange-500);
     --aug-border-left: 0px;
     --aug-tr:5vh;
     --aug-r-center: 30%;
@@ -90,9 +254,6 @@ body{
     width: 80px;
     height: 95vh;
 
-    --aug-inlay-all: 0px;
-    --aug-inlay: initial;
-    --aug-inlay-bg: #0B1D34;
     --aug-bl: 50px;
 }
 
@@ -102,9 +263,8 @@ body{
     top: 0px;
     left: 80px;
 
-    --aug-inlay-all: 0px;
-    --aug-inlay: initial;
-    --aug-inlay-bg: #0B1D34;
+    background: var(--blue-800-80);
+
     --aug-tr:5vh;
     --aug-r-center: 30%;
     --aug-r-extend1: 20vh;
@@ -112,22 +272,10 @@ body{
 
 .layout-menu-background-right-close{
     transition: all 0.5s ease-in-out;
-    opacity: 0;
     width: 5vh;
-}
-
-.layout-menu-background-left-close{
-    transition: all 0.5s ease-in-out;
-    opacity: 0;
 }
 
 .layout-menu-background-right-open{
     transition: all 0.5s ease-in-out;
-    opacity: 0.5;
     width: 25vh;
-}
-
-.layout-menu-background-left-open{
-    transition: all 0.5s ease-in-out;
-    opacity: 0.5;
 }
