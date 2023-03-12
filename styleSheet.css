@@ -241,8 +241,10 @@ body{
 .icons{
     width: 40px;
     height: 40px;
-    background-color: var(--orange-500-50);
     transition: all 0.3s ease-in;
+}
+
+.icons img{
 }
 
 
