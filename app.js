@@ -21,6 +21,8 @@ $(document).ready(function(){
         $('#test').find('.content-box-content').find('img').addClass("hide");
         $('#test').find('.content-box-content').find('.content-box-content-details').addClass("show");
         $('#test').find('.aug-blue-shadow').addClass("content-extend");
+
+        SetMainTitle($('#test').attr('value'));
     }).mouseleave(function(){
         $('#test').find('.content-box-title').removeClass("hide");
         $('#test').find('.content-box-content').removeClass("content-extend");
@@ -36,5 +38,19 @@ $(document).ready(function(){
         $('#test').find('.content-box-content').find('.content-box-content-details').addClass("hide");
         $('#test').find('.aug-blue-shadow').addClass("content-retracted");
 
+        UnsetMainTitle();
     });
 });
+
+function SetMainTitle(newTitle){
+    titleTemp = $('#main-title').text();
+    $('#main-title').text(newTitle);
+    $('#main-title').addClass('text-orange-glow');
+}
+
+function UnsetMainTitle(){
+    $('#main-title').text(titleTemp);
+    $('#main-title').removeClass('text-orange-glow');
+}
+
+let titleTemp = "";
