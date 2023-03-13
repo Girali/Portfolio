@@ -10,17 +10,11 @@
 </head>
 
 <body>
-    <div id="layout-menu">
-        <div id="layout-menu-upper">
-            <div id="menu-button" data-augmented-ui="tl-round"></div>
-            <div id="menu-header" data-augmented-ui="tr-round br-clip">
-                <div id="main-title" class="roboto-text ">All projects</div>
-            </div>
-        </div>
-        <div id="layout-menu-side" data-augmented-ui="bl-clip"></div>
-        <div id="layout-menu-side-bar" data-augmented-ui="tr-clip r-clip-y br-round"></div>
-        <div id="layout-menu-background-right" class="layout-menu-background-right-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
+    <div id="label" class="hide">
+        <img id="label-line" src="assets/img/label-underline.svg">
+        <div id="label-text" class="roboto-text text-orange-glow">Text</div>
     </div>
+    <div id="loader-layout-menu"></div>
     <div id="content">
         <div id="content-main">
             <div id="test" value="Vandalhalla" class="content-box" data-augmented-ui="tr-round tl-clip r-clip-y br-round">
@@ -56,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="content-box-content-details-readme roboto-text">
-                                READ MORE
+                                <a href="index.html">READ MORE</a>
                             </div>
                         </div>
                     </div>
@@ -78,50 +72,3 @@
     </div>
 </body>
 </html>
-
-<!--
-
-    <div id="menu-background"></div>
-    <div id="layout-menu-upper">
-        <svg width="83" height="49" viewBox="0 0 83 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M82.5 1v47.5H1V11C1 5.477 5.477 1 11 1h71.5Z" stroke="#E6AC19"/>
-        </svg>
-        <div id="line-h"></div>
-        <svg width="36" height="49" viewBox="0 0 36 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 48.5a10 10 0 0 0 7.336-3.204l25.474-27.5C38.74 11.394 34.2 1 25.474 1H0" stroke="#E6AC19"/>
-        </svg>
-    </div>
-    <div id="layout-menu-side">
-        <div id="line-v"></div>
-        <svg width="83" height="72" viewBox="0 0 83 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M82.5 0v70.642H71.642a10 10 0 0 1-7.07-2.929L3.928 7.071A10 10 0 0 1 1 0" stroke="#E6AC19"/>
-        </svg>
-    </div>
-    <div id="layout-side-bar">
-        <div id="side-bar-top">
-            <div id="side-bar-space">
-            </div>
-            <div class="side-bar-assets">
-                <svg width="52" height="50" viewBox="0 0 52 50"fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M51 49 1 1" stroke="#E6AC19"/></svg>
-            </div>
-        </div>
-        <div id="side-bar-bot">
-            <div id="side-bar-space" style="border-bottom-style: solid;    border-bottom-width: thin;    border-bottom-color: #E6AC19;     margin-bottom: 1px;">
-            </div>
-            <div class="side-bar-assets">
-                <div id="side-bar-asset-space1"></div>
-                <svg width="16" height="187" viewBox="0 0 16 187"fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.141.931a10 10 0 0 1-2.84 6.982l-8.46 8.674A10 10 0 0 0 1 23.569v140.362a10 10 0 0 0 2.841 6.982l8.46 8.674a10 10 0 0 1 2.84 6.982" stroke="#E6AC19"/></svg>
-                <div id="side-bar-asset-space2"></div>
-                <svg style="padding-bottom: 1px" width="51" height="11" viewBox="0 0 51 11"fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 10.5h40c5.523 0 10-4.477 10-10" stroke="#E6AC19"/></svg>
-            </div>
-        </div>
-    </div>
-
-    <script src="three.js"></script>
-    <script src="app.js"></script>
-    <path d="M0 48.5h56.632a10 10 0 0 0 7.336-3.204l25.474-27.5C95.372 11.394 90.832 1 82.106 1H0" stroke="#E6AC19"/>
-    <path d="M82 517V1m0 0H10.5C4.977 1 .5 5.477.5 11v506M82 1h125M.5 48.5H207" stroke="#E6AC19"/>
-    <path d="M82 0v148.5H71.142a10.001 10.001 0 0 1-7.07-2.929L3.428 84.929A10 10 0 0 1 .5 77.858V0" stroke="#E6AC19"/>
-    <path d="M0 148.5h40c5.523 0 10-4.477 10-10V0" stroke="#E6AC19"/>
-    <path d="m1 1 50 48v254.931a10 10 0 0 1-2.841 6.982l-8.46 8.674a10 10 0 0 0-2.84 6.982v140.362a10 10 0 0 0 2.84 6.982l8.46 8.674A10 10 0 0 1 51 489.569V517"/>
--->
