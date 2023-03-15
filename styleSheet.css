@@ -428,6 +428,10 @@ loader-layout-menu{
     --aug-bl: 50px;
 }
 
+.content-box-grow{
+    flex-grow: 2;
+}
+
 #layout-menu-side-items{
     z-index: 5;
     position: absolute;
@@ -439,6 +443,7 @@ loader-layout-menu{
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu-icons-content img{
@@ -458,6 +463,13 @@ loader-layout-menu{
     opacity: 1;
     filter: drop-shadow(0 0 10px var(--orange-glow-fix)) invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
 }
+
+.active{
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--orange-glow-fix)) invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
+}
+
 
 #layout-menu-side-bar{
     z-index: 3;
