@@ -3,6 +3,7 @@
 :root{
     --neonblue: #4791EB;
     --orange-glow-fix: hsla(226, 80%, 50%, 0.5);
+    --blue-glow-fix: hsl(77, 100%, 50%, 0.5);
 
     --blue-900: rgb(12, 21, 32);
     --blue-800: rgb(11, 29, 52);
@@ -21,6 +22,7 @@
     --orange-800: rgb(95, 47, 3);
     --orange-800-75: rgba(95, 47, 3, 75%);
     --orange-700: rgb(157, 83, 36);
+    --orange-700-75: rgba(157, 83, 36, 75%);
     --orange-600: rgb(197, 138, 43);
     --orange-500: rgb(230, 172, 25);
     --orange-500-75: rgb(230, 172, 25, 75%);
@@ -105,11 +107,9 @@ body{
 #content-main{
     padding-top: 5vh;
     padding-left: 5vh;
-    padding-right: 10vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
 }
 
 .content-box{
@@ -139,6 +139,18 @@ body{
     height: 100%;
     width: 100%;
     filter: drop-shadow(0 0 5px var(--blue-800)) drop-shadow(0 0 5px var(--blue-800))  drop-shadow(0 0 5px var(--blue-800)) ;
+}
+
+.aug-blueneon-shadow{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0 0 0px var(--blue-500));
+    transition: all 0.5s ease-in-out;
+}
+
+.aug-blueneon-shadow:hover{
+    filter: drop-shadow(0 0 10px var(--blue-500));
+    transition: all 0.5s ease-in-out;
 }
 
 .content-box-content-border{
@@ -222,7 +234,7 @@ body{
 }
 
 #main-title{
-    font-size: 25px;
+    font-size: 35px;
     color: var(--orange-600);
 }
 
@@ -432,6 +444,99 @@ loader-layout-menu{
     flex-grow: 2;
 }
 
+#content-title{
+    height: 170px;
+    padding-top: 10vh;
+    padding-left: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+#content-title-title{
+    z-index: 2;
+    cursor: pointer;
+    width: 75%;
+    height: 100%;
+    padding-right: 40px;
+    position: relative;
+}
+
+.title-glow-orange{
+    background: linear-gradient(90deg, var(--orange-500) -1.59%, var(--orange-700-75) 106.39%);
+}
+
+.main-title-glow-orange{
+    background: linear-gradient(90deg, var(--orange-500) 0.43%, var(--orange-800) 105.26%);
+    color: var(--orange-900);
+}
+
+.sub-title-glow-orange{
+    color: var(--orange-500);
+    filter: drop-shadow(0 0 10px var(--orange-500));
+    transition: color .5s ,filter .5s ease-in-out;
+}
+
+.title-glow-blue{
+    background: linear-gradient(90deg, var(--blue-400) 0.43%, var(--blue-500) 105.26%);
+
+}
+
+.main-title-glow-blue{
+    background: linear-gradient(90deg, var(--blue-400) -1.59%, var(--blue-800) 106.39%);
+    color: var(--blue-800);
+}
+
+.sub-title-glow-blue{
+    color: var(--blue-400);
+    filter:;
+    transition: color .5s ,filter .5s ease-in-out;
+}
+
+.content-title-main-glow{
+    z-index: 1;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    text-align: right;
+    font-size: 8vw;
+    filter: blur(12.5px);
+    opacity: 0.5;
+}
+
+.content-title-main{
+    z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px transparent;
+    text-align: right;
+    font-size: 8vw;
+}
+
+#content-title-sub{
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    text-align: right;
+    font-size: 1.4vw;
+}
+
+#content-title-bar{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 70%;
+    max-width: 1085px;
+    display: flex;
+
+}
+
 #layout-menu-side-items{
     z-index: 5;
     position: absolute;
@@ -450,12 +555,121 @@ loader-layout-menu{
     width: 80px;
 }
 
+.resume-button-text{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: var(--blue-400);
+    margin-left: 10%;
+    font-size: 26px;
+    transition: all 0.5s ease-in-out;
+}
+
+.resume-button-text:hover{
+    color: var(--neonblue);
+    text-shadow: 0 0 5px var(--neonblue);
+    transition: all 0.5s ease-in-out;
+}
+
+.resume-button{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(90deg,var(--blue-900) -97.89%,var(--blue-600) 132.95%);
+
+    --aug-border: initial;
+    --aug-border-all: 2px;
+
+    --aug-round-tr2: initial;
+    --aug-clip-tr1: initial;
+
+    --aug-tr1: 10px;
+    --aug-tr-extend1: 20%;
+    --aug-tr2: 6px;
+
+    --aug-border-bg: linear-gradient(270deg, var(--neonblue) -2.05%, var(--blue-500) 97.48%);
+
+    --aug-br: 10px;
+    --aug-bl: 10px;
+    --aug-tl: 10px;
+}
+
+#menu-resume-button{
+    pointer-events: all;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: calc(92% - 80px);
+    height: 5%;
+}
+
+#menu-social-icons{
+    position: absolute;
+    bottom: calc(5% + 20px);
+    right: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menu-social{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    pointer-events: all;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.25;
+    filter: invert(52%) sepia(39%) saturate(1456%) hue-rotate(188deg) brightness(94%) contrast(96%);
+}
+
+.menu-social:hover{
+    transition: all 0.5s ease-in-out;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--blue-glow-fix)) invert(52%) sepia(39%) saturate(1456%) hue-rotate(188deg) brightness(94%) contrast(96%);
+}
+
+.menu-sub-item{
+    overflow: hidden;
+    pointer-events: all;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.menu-sub-item:hover{
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--orange-500));
+}
+
+.menu-sub-item-icon{
+    margin-left: 10%;
+    align-self: start;
+}
+
+.menu-sub-item-text{
+    margin-left: 3%;
+    font-size: 25px;
+    color: var(--orange-500);
+}
+
+#sub-menu-items-content{
+    margin-left: 80px;
+}
+
 .menu-icons{
     pointer-events: all;
     transition: all 0.3s ease-in;
     margin-top: 1rem;
     opacity: 0.5;
     filter: invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
+    transition: all 0.5s ease-in-out;
 }
 
 .menu-icons:hover{
@@ -468,6 +682,12 @@ loader-layout-menu{
     transition: all 0.3s ease-in;
     opacity: 1;
     filter: drop-shadow(0 0 10px var(--orange-glow-fix)) invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
+}
+
+.active-sub{
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--orange-500));
 }
 
 

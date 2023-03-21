@@ -66,4 +66,3 @@ function UnsetMainTitle(){
     $('#main-title').removeClass('text-orange-glow');
 }
 
-let titleTemp = "";
