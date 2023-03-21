@@ -8,6 +8,7 @@ let subLoaded = false;
 let titleTemp = "";
 let loadSubMenus = null;
 let allContents = []
+let subMenuContent = null;
 
 $(document).ready(function(){
     $('#loader-layout-menu').load('elements/layout-menu.html', () => {
@@ -56,7 +57,7 @@ function LoadContent(name , path , parent , sectionIndex){
 
     for (let i = 0; i < allContents.length; i++){
         if(allContents[i].content.loaded){
-            UnloadContent(allContents[i]);
+            $("#content-main").remove();
         }
     }
 
@@ -65,7 +66,7 @@ function LoadContent(name , path , parent , sectionIndex){
     for (let i = 0; i < allContents.length; i++){
         if(allContents[i].name == name){
             currentActiveSectionContent = i;
-            allContents[i].content.content.appendTo( "#content" );
+            allContents[i].content.content.clone().appendTo( "#content" );
             allContents[i].content.loaded = true;
             loadNeed = false;
         }
@@ -88,13 +89,6 @@ function LoadContent(name , path , parent , sectionIndex){
         loadSubMenus(false);
     }, 200)
 }
-
-function  UnloadContent(contentToUnload){
-    let temp = $("#content-main").detach();
-    contentToUnload.content.loaded = false;
-    contentToUnload.content.content = temp;
-}
-
 
 function UpdateMainTitle(){
     $('#main-title').text(sectionsNames[currentActiveSection]);
