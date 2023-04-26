@@ -1,0 +1,99 @@
+<div id="content-main">
+    <script src="pages/article.js"></script>
+    <div id="content-article" value="Fog of war">
+        <div id="content-article-container">
+            <div id="content-article-buttons">
+                <div class="content-article-button-selector article-button-selected" value="main">
+                    <div class="content-article-button-text iceland-text content-article-button-text-selected">Main</div>
+                    <img class="content-article-button-underbars show" src="assets/img/element/selector.svg">
+                    <img class="content-article-button-underbars-dashed hide" src="assets/img/element/selector-dashed.svg">
+                </div>
+            </div>
+            <div id="content-article-box-glow">
+                <div id="content-article-box" data-augmented-ui="tl-clip tr-clip r-clip-y br-round">
+                    <div id="content-article-box-main" class="active-panel content-article-box-section">
+                        <div class="content-article-title">
+                            <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                Fog of war
+                            </div>
+                            <div class="iceland-text content-article-main-title title-glow-blue">
+                                Fog of war
+                            </div>
+                            <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                <path stroke="#E6AC19" d="M0 1h446.5"/>
+                            </svg>
+                        </div>
+                        <div class="content-article-main-content">
+                            <div class="content-article-main-content-infos">
+                                <div class="content-article-main-content-text roboto-text">
+                                    I little fun project that I coded in June for a week. I wanted to <hli>reproduce</hli> the fog of war <hli>mechanic</hli> from games like <hli>Warcraft</hli> or <hli>Starcraft</hli> and the result is here.
+                                </div>
+                                <div class="content-article-main-content-icons">
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/clock.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            1 month
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/groupe.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            1 person
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/finish.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            Jul 2022
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    Coding it was a nice challenge to remind me what I learned about <hli>computer graphic calculation</hli> during my firsts years of computer science.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    In addition, I could rediscover that <hli>Unity</hli> made in terms of <hli>multithreading</hli>, even if at the end I did not have to use it.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    <hil>My approach for this fog of war was the following</hil>
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    At first I create an <hli>array of height</hli> for the terrain, so I can block the view of certain units when there is a higher along his view path. During this step I separate the map into a grid of squares.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    Then I separate my <hli>units into batches</hli>, so I can <hli>dispatch</hli> the <hli>calculations</hli> for their view on different frames.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    When processing the view of one unit, I write in an 2D array of boolean if the unit see the square on the grid. And the behind of how that works, I use the same logic as the one for <hli>drawing circle</hli> in a <hli>2d graphic</hli> software, and I only do it for one fourth of the circle because the rest of coordinates are basically mirrors view of the one already processed. It’ based of <a href="https://en.wikipedia.org/wiki/Midpoint_circle_algorithm">Bresenham’s circle drawing algorithm (here)</a>.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    When all <hli>batches</hli> are <hli>finished</hli> I <hli>assemble</hli> the difference <hli>results</hli> and draw it in a texture where the seen squares are white and others are black, between two textures I always preserve the last one processed, so I can <hli>interpolate</hli> from on to another <hli>via shader</hli> and so make the <hli>transition</hli> less laggy and more <hli>Warcraft style</hli>.
+                                </div>
+                            </div>
+                            <div class="content-article-main-content-visuals">
+                                <div class="content-article-main-content-visuals-main">
+                                    <video width="1280" height="720" controls>
+                                        <source src="assets/vid/fog-of-war.webm" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="content-article-main-content-visuals-icons">
+                                    <img class="icons" value="Unity" src="assets/img/icons/unity.svg" width="50" height="50">
+                                    <img class="icons" value="C#" src="assets/img/icons/c-sharp.svg" width="50" height="50">
+                                    <img class="icons" value="It`s a 'feature'" src="assets/img/icons/feature.svg" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content-article-box-bars">
+                        <svg id="content-article-box-bar-left" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                            <path stroke="#E6AC19" d="M0 1h446.5"/>
+                        </svg>
+                        <svg id="content-article-box-bar-right" xmlns="http://www.w3.org/2000/svg" width="1009" height="33" fill="none" viewBox="0 0 1009 33">
+                            <path stroke="#E6AC19" stroke-dasharray="10 10" d="M0 31.997h71l31-31h907"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

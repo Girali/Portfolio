@@ -1,0 +1,196 @@
+<div id="content-main">
+    <script src="pages/article.js"></script>
+    <div id="content-article" value="Networked Physics">
+        <div id="content-article-container">
+            <div id="content-article-buttons">
+                <div class="content-article-button-selector article-button-selected" value="main">
+                    <div class="content-article-button-text iceland-text content-article-button-text-selected">Main</div>
+                    <img class="content-article-button-underbars show" src="assets/img/element/selector.svg">
+                    <img class="content-article-button-underbars-dashed hide" src="assets/img/element/selector-dashed.svg">
+                </div>
+                <div class="content-article-button-selector"  value="more">
+                    <div class="content-article-button-text iceland-text">More</div>
+                    <img class="content-article-button-underbars hide" src="assets/img/element/selector.svg">
+                    <img class="content-article-button-underbars-dashed show" src="assets/img/element/selector-dashed.svg">
+                </div>
+            </div>
+            <div id="content-article-box-glow">
+                <div id="content-article-box" data-augmented-ui="tl-clip tr-clip r-clip-y br-round">
+                    <div id="content-article-box-main" class="active-panel content-article-box-section">
+                        <div class="content-article-title-mini">
+                            <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                NETWORKED PHYSICS SYSTEM
+                            </div>
+                            <div class="iceland-text content-article-main-title title-glow-blue">
+                                NETWORKED PHYSICS SYSTEM
+                            </div>
+                            <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                <path stroke="#E6AC19" d="M0 1h446.5"/>
+                            </svg>
+                        </div>
+                        <div class="content-article-main-content">
+                            <div class="content-article-main-content-infos">
+                                <div class="content-article-main-content-text roboto-text">
+                                    <hil>CLIENT SIDE PREDICTION NETWORKED PHYSICS SYSTEM</hil><br>
+                                    <br>
+                                    First of all, <hclick onclick="LoadArticle('Article-Vandalhalla', 'articles/vandalhalla.html', '#content')">Vandalhalla</hclick> has a <hli>Client Predicted, Server Authoritative networked physics system</hli>, a system that <hli>innovate</hli> the FPS industry.<br><br>
+                                    <hil>What does it mean ?</hil><br><br>
+                                    In a <hli>standard multiplayer</hli> game that uses physics as a gameplay mechanic. It's the <hli>SERVER</hli> instance that <hli>dictate</hli> how an object <hli>interact</hli> physically with another object.<br>
+                                </div>
+                            </div>
+                            <div class="content-article-main-content-visuals">
+                                <div class="content-article-main-content-visuals-main">
+                                    <video width="1280" height="720" controls>
+                                        <source src="assets/vid/spawn-pool.webm" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="content-article-main-content-visuals-icons">
+                                    <img class="icons" value="Unity" src="assets/img/icons/unity.svg" width="50" height="50">
+                                    <img class="icons" value="C#" src="assets/img/icons/c-sharp.svg" width="50" height="50">
+                                    <img class="icons" value="It`s a 'feature'" src="assets/img/icons/feature.svg" width="50" height="50">
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="content-article-box-more" class="hide-panel content-article-box-section">
+                        <div class="content-article-box-carousel"  value="0">
+                            <div class="content-article-box-carousel-section active-panel">
+                                <div class="content-article-title-mini">
+                                    <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                        How does it work ?
+                                    </div>
+                                    <div class="iceland-text content-article-main-title title-glow-blue">
+                                        How does it work ?
+                                    </div>
+                                    <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                        <path stroke="#E6AC19" d="M0 1h446.5"/>
+                                    </svg>
+                                </div>
+                                <div class="content-article-main-content">
+                                    <div class="content-article-main-content-infos">
+                                        <div class="content-article-main-content-text roboto-text">
+                                            <hil>Standard Network</hil><br><br>
+                                            For example in a standard network architecture. If a player use a car,<br>
+                                            when he presses the forward key first, the key press is sent to the <hli>SERVER</hli>,<br>
+                                            than the <hli>SERVER</hli> process it and make the car move forward,<br>
+                                            and at last this movement is sent back to all players.<br>
+                                            <br>
+                                            Let's say all that takes <hli>200ms</hli> <dli>(a 1/5 of a second)</dli>.<br>
+                                            <br>
+                                            <hil>Client Predicted Network</hil><br><br>
+                                            In a <hli>CLIENT</hli> side predicted physics system,<br>
+                                            when the player presses the forward key, the car starts to move directly on the <hli>CLIENT</hli> and the key is send to the <hli>SERVER</hli>,<br>
+                                            Then the <hli>SERVER</hli> process the key, and it creates the car movement as well in the <hli>SERVER</hli> instance <dli>(like in a standard architecture)</dli>,<br>
+                                            and so the movement is sent back to all players.<br>
+                                            <br>
+                                            BUT there its own more step, the "correction step". As the <hli>CLIENT</hli> who pressed the key in the first place, we are now correcting the movement of the car based on the movement send by the <hli>SERVER</hli> and our current movement.<br>
+                                            <br>
+                                            This has a consequence to slow a little bit our car to match the <hli>SERVER</hli> instance reality on the <hli>CLIENT</hli> instance.<br>
+                                            The travel time between the key press and <hli>SERVER</hli> movement being received by us is still 200ms.<br>
+                                            But this time we did not had to wait this delay to see our car movement.<br>
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-visuals">
+                                        <div class="content-article-main-content-visuals-main">
+                                            <video width="1280" height="720" controls>
+                                                <source src="assets/vid/client-predict.webm" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-end"></div>
+                                </div>
+                            </div>
+                            <div class="content-article-box-carousel-section hide-panel">
+                                <div class="content-article-title-mini">
+                                    <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                        Why we need that system ?
+                                    </div>
+                                    <div class="iceland-text content-article-main-title title-glow-blue">
+                                        Why we need that system ?
+                                    </div>
+                                    <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                        <path stroke="#E6AC19" d="M0 1h446.5"/>
+                                    </svg>
+                                </div>
+                                <div class="content-article-main-content">
+                                    <div class="content-article-main-content-infos">
+                                        <div class="content-article-main-content-text roboto-text">
+                                            I wanted to integrate such system into <hclick onclick="LoadArticle('Article-Vandalhalla', 'articles/vandalhalla.html', '#content')">Vandalhalla</hclick> based of the concept of Game fell from Steve Swink, mainly because of one principal "Realtime controls" which stand for having responsive controls in game.<br><br>
+                                            That mean that I needed a networking system based on physics that respond in <hli>less</hli> than <hli>200ms</hli>.<br><br>
+                                            In addition, now if we apply all this to a FPS, we can see our arrows being sent directly after the mouse button was press or even rocket jump without any delay. Which improve directly the game feel and the precision of the movements.<br><br>
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-visuals">
+                                        <div class="content-article-main-content-visuals-main">
+                                            <video width="1280" height="720" controls>
+                                                <source src="assets/vid/spawn-pool.webm" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-end"></div>
+                                </div>
+                            </div>
+                            <div class="content-article-box-carousel-section hide-panel">
+                                <div class="content-article-title-mini">
+                                    <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                        What about cheating ?
+
+                                    </div>
+                                    <div class="iceland-text content-article-main-title title-glow-blue">
+                                        What about cheating ?
+
+                                    </div>
+                                    <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                        <path stroke="#E6AC19" d="M0 1h446.5"/>
+                                    </svg>
+                                </div>
+                                <div class="content-article-main-content">
+                                    <div class="content-article-main-content-infos">
+                                        <div class="content-article-main-content-text roboto-text">
+                                            And if you are worrying about cheating, there is no way for a cheater to get a faster car.
+                                            <br>
+                                            <br>
+                                            Because the cheater is only sending the key press to the <hli>SERVER</hli>, this means that even if the car go faster on the cheater <hli>CLIENT</hli>, the <hli>SERVER</hli> has the right speed, and so he will always send back the real position of the cheater car.
+                                            <br>
+                                            <br>
+                                            And so as a consequence, the cheater will only see his car being teleported back to the <hli>SERVER</hli> position because on the correction step.<br>
+                                            As mentioned before, the correction will adjust the speed of the car to match the <hli>SERVER</hli> reality, but if the results are too different between the <hli>CLIENT</hli> and the <hli>SERVER</hli>.<br>
+                                            The game will set the cheater car position to the <hli>SERVER</hli> position of the car.<br>
+                                            And other players of the same race will never see the teleportation of the cheater because they never had been sent the cheater wrong position in the first place.                                    </div>
+                                        </div>
+                                    <div class="content-article-main-content-visuals">
+                                        <div class="content-article-main-content-visuals-main">
+                                            <video width="1280" height="720" controls>
+                                                <source src="assets/vid/vandalhalla.webm" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-end"></div>
+                                </div>
+                            </div>
+                            <div class="content-article-box-carousel-buttons">
+                                <img class="content-article-box-carousel-arrow back" src="assets/img/element/arrow-blue.svg">
+                                <div class="content-article-box-carousel-slide" value="0"></div>
+                                <img class="content-article-box-carousel-sep" src="assets/img/element/short-dashed-line.svg">
+                                <div class="content-article-box-carousel-slide" value="1"></div>
+                                <img class="content-article-box-carousel-sep" src="assets/img/element/short-dashed-line.svg">
+                                <div class="content-article-box-carousel-slide" value="2"></div>
+                                <img class="content-article-box-carousel-arrow next" src="assets/img/element/arrow-blue.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content-article-box-bars">
+                        <svg id="content-article-box-bar-left" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                            <path stroke="#E6AC19" d="M0 1h446.5"/>
+                        </svg>
+                        <svg id="content-article-box-bar-right" xmlns="http://www.w3.org/2000/svg" width="1009" height="33" fill="none" viewBox="0 0 1009 33">
+                            <path stroke="#E6AC19" stroke-dasharray="10 10" d="M0 31.997h71l31-31h907"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

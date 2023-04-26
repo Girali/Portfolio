@@ -31,19 +31,38 @@
     <div class="menu-icons">
       <div class="menu-icons-content" onclick="LoadContent('AllProjects','pages/all-projects.html','#content', 3)">
         <img src="assets/img/icons/bag.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">ALL PROJECTS</div>
+        <div class="menu-icons-text iceland-text hide-quick">PROJECTS</div>
       </div>
     </div>
-    <div id="sub-menu-items" class="hide">
+    <div id="sub-menu-items" class="hide-panel">
+      <div id="sub-menu-items-content" >
+        <script src="elements/sub-menu-projects-script.js"></script>
 
+        <div class="menu-sub-item active-sub" onclick="UpdateSubItems(0), SortItems('all')">
+          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+          <div class="menu-sub-item-text iceland-text" >All</div>
+        </div>
+        <div class="menu-sub-item"  onclick="UpdateSubItems(1), SortItems('technical')">
+          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+          <div class="menu-sub-item-text iceland-text" >Technical</div>
+        </div>
+        <div class="menu-sub-item"  onclick="UpdateSubItems(2), SortItems('games')">
+          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+          <div class="menu-sub-item-text iceland-text" >Games</div>
+        </div>
+        <div class="menu-sub-item"  onclick="UpdateSubItems(3), SortItems('art')">
+          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+          <div class="menu-sub-item-text iceland-text" >Art</div>
+        </div>
+      </div>
     </div>
     <div class="menu-icons">
-      <div class="menu-icons-content" onclick="LoadContent('Archives','pages/archives.html','#content', 4)">
+      <a class="menu-icons-content" href="archive/archive.html" target="_blank">
         <img src="assets/img/icons/archives.svg" width="40" height="40">
         <div class="menu-icons-text iceland-text hide-quick">ARCHIVE</div>
-      </div>
+      </a>
     </div>
-    <a id="menu-resume-button" class="hide aug-blueneon-shadow" href="assets/cv.pdf" target="_blank">
+    <a id="menu-resume-button" class="hide aug-blueneon-shadow" href="assets/resume.pdf" target="_blank">
         <div class="resume-button" data-augmented-ui="tl-round bl-round br-clip">
           <div class="resume-button-text iceland-text">RESUME</div>
         </div>

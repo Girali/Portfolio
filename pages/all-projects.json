@@ -1,0 +1,498 @@
+{
+  "articles": [
+    {
+      "title": "Vandalhalla",
+      "sub_title": "ONLINE FAST PACED FPS",
+      "description": "In Vandalhalla you play to bring back amusement in a near future where fun is forbidden.\n          You will bring back the fun in the city by participating in illegal fights.\n          This fights highly recommends you to destroy the environment, kill your opponents and control capture points.",
+      "path": "articles/vandalhalla.html",
+      "image": "assets/img/articles/vandalhalla_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "Steam",
+          "image": "assets/img/icons/steam.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "Photon Bolt",
+          "image": "assets/img/icons/bolt.svg"
+        },
+        {
+          "title": "Google Cloud",
+          "image": "assets/img/icons/google-cloud.svg"
+        }
+      ]
+    },
+    {
+      "title": "Le french bakery",
+      "sub_title": "OVERCOOKED LIKE",
+      "description": "A little arcade game, like Overcooked where we are working at a French bakery.",
+      "path": "articles/le-french-bakery.html",
+      "image": "assets/img/articles/le-french-bakery_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        }
+      ]
+    },
+    {
+      "title": "Vodka Motors",
+      "sub_title": "RUSSIAN DELIVERY GUY SIM",
+      "description": "A game were we are a delivery driver in a Russian post-apocalyptic world. And our only friends are vodka and mechanics.",
+      "path": "articles/vodka-motors.html",
+      "image": "assets/img/articles/vodka-motors_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        }
+      ]
+    },
+    {
+      "title": "D N’ D BUT BETTER",
+      "sub_title": "VR TOWER DEFENCE",
+      "description": "Dungeon and Dragon but better, is VR and PC tower defence. A totally refreshed version of the board game.",
+      "path": "articles/DND.html",
+      "image": "assets/img/articles/DADBB_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "VR",
+          "image": "assets/img/icons/vr.svg"
+        }
+      ]
+    },
+    {
+      "title": "Velocity Pick",
+      "sub_title": "ARCADE GAME",
+      "description": "Pick Velocity is an Arcade game, made to challenge myself on a 1-day project with a new game engine.",
+      "path": "articles/velocity-pick.html",
+      "image": "assets/img/articles/velocity-pick_1.jpg",
+      "icons": [
+        {
+          "title": "Godot",
+          "image": "assets/img/icons/godot.svg"
+        },
+        {
+          "title": "Python",
+          "image": "assets/img/icons/python.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        }
+      ]
+    },
+    {
+      "title": "F.U.N. GAME",
+      "sub_title": "ONLINE FPS PROTOTYPE",
+      "description": "F.U.N. Game is an old school type online FPS, based on a capture the flag game mode.",
+      "path": "articles/fun-game.html",
+      "image": "assets/img/articles/fun-game_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "Photon Bolt",
+          "image": "assets/img/icons/bolt.svg"
+        }
+      ]
+    },
+    {
+      "title": "Procedural Urbanization",
+      "sub_title": "VR TOOL",
+      "description": "Procedural Urbanization is a VR urban architecture tool made to create procedurally generated cities.",
+      "path": "articles/urban.html",
+      "image": "assets/img/articles/proc-urb_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "VR",
+          "image": "assets/img/icons/vr.svg"
+        }
+      ]
+    },
+    {
+      "title": "Darkest Room",
+      "sub_title": "ESCAPE GAME",
+      "description": "Darkest Room is an escape game, with a PS1 visual style. You need to escape the room before the light goes out forever for you.",
+      "path": "articles/darkest-room.html",
+      "image": "assets/img/articles/darkest-room_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        }
+      ]
+    },
+    {
+      "title": "MEME WORLD",
+      "sub_title": "ARCADE GAME",
+      "description": "MEME World is an arcade runner, where the player goal is to avoid falling into the void.",
+      "path": "articles/meme-world.html",
+      "image": "assets/img/articles/meme-world_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "Android",
+          "image": "assets/img/icons/android.svg"
+        },
+        {
+          "title": "Google Play",
+          "image": "assets/img/icons/google-play.svg"
+        }
+      ]
+    },
+    {
+      "title": "Super Vega Missyl Racing",
+      "sub_title": "RACING GAME",
+      "description": "Super Vega Missyl Racing is an arcade racing game based on a true story of a legend, “Étienne le Bolideur”.",
+      "path": "articles/vega-missyl.html",
+      "image": "assets/img/articles/vega-missyl_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "Multiplayer",
+          "image": "assets/img/icons/internet.svg"
+        }
+      ]
+    },
+    {
+      "title": "Space Velocity",
+      "sub_title": "ARCADE GAME",
+      "description": "Space Velocity is an arcade game, where the player controls a spaceship that accumulate more and more speed over time.",
+      "path": "articles/space-velocity.html",
+      "image": "assets/img/articles/space-velocity_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "Android",
+          "image": "assets/img/icons/android.svg"
+        },
+        {
+          "title": "Google Play",
+          "image": "assets/img/icons/google-play.svg"
+        },
+        {
+          "title": "Google Cloud",
+          "image": "assets/img/icons/google-cloud.svg"
+        }
+      ]
+    },
+    {
+      "title": "CLICK N’ MINE",
+      "sub_title": "COOKIE CLICKER LIKE",
+      "description": "Click n’ Mine is a Cookie Clicker style game. In Click n’ Mine you incarnate a worker from the Red Army and recreate capitalism.",
+      "path": "articles/click-mine.html",
+      "image": "assets/img/articles/click-mine_1.jpg",
+      "icons": [
+        {
+          "title": "Python",
+          "image": "assets/img/icons/python.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        }
+      ]
+    },
+    {
+      "title": "Networked Physics",
+      "sub_title": "NETWORKED PHYSICS",
+      "description": "A networked physics system with client side prediction on physics, created specially for Vandalhalla in order to reduce perceived latency.",
+      "path": "articles/phys.html",
+      "image": "assets/img/articles/predict-client-phys_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "v",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "It`s a \"feature\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "Fog of war",
+      "sub_title": "RTS type mechanic",
+      "description": "I little fun project that I coded in June for a week. I wanted to reproduce the fog of war mechanic from games like Warcraft or Starcraft and the result is here.",
+      "path": "articles/fog.html",
+      "image": "assets/img/articles/fog_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "It`s a \"feature\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "DATUM Portals",
+      "sub_title": "Portal type mechanic",
+      "description": "The portal system was not static, in fact, Datum is a VR game project where the player can summon portals at his hands position...",
+      "path": "articles/datum-portal.html",
+      "image": "assets/img/articles/datum_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "It`s a \"feature\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "Content management UI",
+      "sub_title": "Unity modified interface",
+      "description": "It’s a Unity editor interface for creating content like items, NPCs, weapons or drops.",
+      "path": "articles/satanass-ui.html",
+      "image": "assets/img/articles/satanass-ui_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "It`s a \"interface\"",
+          "image": "assets/img/icons/interface.svg"
+        },
+        {
+          "title": "It`s a \"tool\"",
+          "image": "assets/img/icons/tool.svg"
+        }
+      ]
+    },
+    {
+      "title": "Boltlorant series",
+      "sub_title": "Youtube tutorial series",
+      "description": "Boltlorant is a series of tutorial videos about the creation of a networked video game based on the game Valorant from Riot Games.",
+      "path": "articles/boltlorant.html",
+      "image": "assets/img/articles/boltlorant_1.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "YouTube",
+          "image": "assets/img/icons/youtube.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "Photon Bolt",
+          "image": "assets/img/icons/bolt.svg"
+        },
+        {
+          "title": "It`s a \"resource\"",
+          "image": "assets/img/icons/ressource.svg"
+        }
+      ]
+    },
+    {
+      "title": "TREE JS",
+      "sub_title": "Tree JS discovery project",
+      "description": "This Tree JS project was an overview of the API and a way from me to do something visually appealing.",
+      "path": "articles/tree-js.html",
+      "image": "assets/img/articles/webgl_1.png",
+      "icons": [
+        {
+          "title": "Java Script",
+          "image": "assets/img/icons/javascript.svg"
+        },
+        {
+          "title": "It`s a \"show-off\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "Mesh morphing",
+      "sub_title": "Mesh morphing",
+      "description": "A student project which aim to create a mesh morphing algorithm.",
+      "path": "articles/mesh-morph.html",
+      "image": "assets/img/articles/morph_2.png",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "It`s a \"feature\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "Road editor",
+      "sub_title": "Level design tool",
+      "description": "Created to help the level designers to create faster and better level for an arcade racing game named “Vega Missyl Racing Game”.",
+      "path": "articles/road-editor.html",
+      "image": "assets/img/articles/road_edit_1.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "It`s a \"tool\"",
+          "image": "assets/img/icons/tool.svg"
+        }
+      ]
+    },
+    {
+      "title": "Procedural island generator",
+      "sub_title": "Procedural mesh",
+      "description": "My first take on procedural generation was this massive landscape generated.",
+      "path": "articles/terrain-gen.html",
+      "image": "assets/img/articles/terrain_gen_4.jpg",
+      "icons": [
+        {
+          "title": "Unity",
+          "image": "assets/img/icons/unity.svg"
+        },
+        {
+          "title": "C#",
+          "image": "assets/img/icons/c-sharp.svg"
+        },
+        {
+          "title": "GitHub",
+          "image": "assets/img/icons/github.svg"
+        },
+        {
+          "title": "It`s a \"feature\"",
+          "image": "assets/img/icons/feature.svg"
+        }
+      ]
+    },
+    {
+      "title": "Outer world passage",
+      "sub_title": "Blender 3D render",
+      "description": "My first realistic render, it's heavily inspired by the sci-fi genera.",
+      "path": "articles/render.html",
+      "image": "assets/img/articles/art_0.jpg",
+      "icons": [
+        {
+          "title": "Blender",
+          "image": "assets/img/icons/blender.svg"
+        },
+        {
+          "title": "Photoshop",
+          "image": "assets/img/icons/photoshop.svg"
+        }
+      ]
+    }
+  ]
+}

@@ -2,49 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>WebGL Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="I’m MARKOWSKI Oskar a Developer with a Professional License Diploma in Computer Science, specialize in project management. And I’m currently studying for a Master degree in Art.
+I’m versatile, and I do like the artistic side of Computer Science, and that's why I chose the Indie Dev path. And I’m really interested in the Tech Artist position as an employ.">
+    <meta name="author" content="Oskar MARKOWSKI">
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/logo.svg">
+    <title>Oskar MARKOWSKI "Indie Dev"</title>
     <link rel="stylesheet" type="text/css" href="augmented-ui.css">
     <link href="styleSheet.css" type="text/css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="scripts/jquery-3.5.1.min.js"></script>
+    <script src="scripts/imagesloaded.pkgd.min.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body>
     <div id="tempLoader"></div>
     <div id="label" class="hide">
-        <img id="label-line" src="assets/img/label-underline.svg">
+        <img id="label-line" src="assets/img/element/label-underline.svg">
         <div id="label-text" class="roboto-text text-orange-glow">Text</div>
+    </div>
+    <div id="label-up" class="hide">
+        <img id="label-up-line" src="assets/img/element/label-underline-up.svg">
+        <div id="label-up-text" class="roboto-text text-orange-glow">Text</div>
+    </div>
+    <div id="img-preview" class="hide-panel">
+        <img src="">
     </div>
     <div id="loader-layout-menu">
 
     </div>
     <div id="content">
-        <div id="content-title">
-            <svg id="content-title-bar" xmlns="http://www.w3.org/2000/svg" width="1085" height="46" fill="none" viewBox="0 0 1085 46">
-                <path stroke="#E6AC19" stroke-dasharray="10 10" d="M1086.5 45h-495l-44-44H0"/>
-            </svg>
-            <div id="content-title-title"  onclick="LoadContent('AboutMe','pages/about-me.html','#content', 0)">
-                <div id="content-title-main-orange" class="hide">
-                    <div class="content-title-main iceland-text title-glow-orange">
-                        Oskar "INDIE DEV"
-                    </div>
-                    <div class="content-title-main-glow iceland-text main-title-glow-orange">
-                        Oskar "INDIE DEV"
-                    </div>
-                </div>
-                <div id="content-title-main-blue"  class="show">
-                    <div class="content-title-main iceland-text title-glow-blue">
-                        Oskar "INDIE DEV"
-                    </div>
-                    <div class="content-title-main-glow iceland-text main-title-glow-blue">
-                        Oskar "INDIE DEV"
-                    </div>
-                </div>
-                <div id="content-title-sub" class="iceland-text sub-title-glow-blue">
-                    My dreams are big enough to scare myself
-                </div>
-            </div>
-        </div>
+
     </div>
 </body>
 </html>

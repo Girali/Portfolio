@@ -1,0 +1,91 @@
+<div id="content-main">
+    <script src="pages/article.js"></script>
+    <div id="content-article" value="Road editor">
+        <div id="content-article-container">
+            <div id="content-article-buttons">
+            </div>
+            <div id="content-article-box-glow">
+                <div id="content-article-box" data-augmented-ui="tl-clip tr-clip r-clip-y br-round">
+                    <div id="content-article-box-main" class="active-panel content-article-box-section">
+                        <div class="content-article-title">
+                            <div class="iceland-text content-article-main-title-glow main-title-glow-blue">
+                                Road editor
+                            </div>
+                            <div class="iceland-text content-article-main-title title-glow-blue">
+                                Road editor
+                            </div>
+                            <svg class="content-article-title-bar" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                                <path stroke="#E6AC19" d="M0 1h446.5"/>
+                            </svg>
+                        </div>
+                        <div class="content-article-main-content">
+                            <div class="content-article-main-content-infos">
+                                <div class="content-article-main-content-text roboto-text">
+                                    The <hli>road editor</hli> was my first <hli>tool</hli> made for <hli>unity editor</hli> in order to help the level designers to create <hli>faster</hli> and better <hli>level design</hli> for an arcade racing game named <hclick onlick="LoadArticle('Article-Super Vega Missyl Racing', 'articles/vega-missyl.html', '#content')">“Vega Missyl Racing Game”</hclick>.                                </div>
+                                <div class="content-article-main-content-icons">
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/clock.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            1 month
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/groupe.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            1 person
+                                        </div>
+                                    </div>
+                                    <div class="content-article-main-content-icon">
+                                        <img class="content-article-main-content-icon-img" src="assets/img/icons/finish.svg" width="65" height="65">
+                                        <div class="iceland-text content-article-main-content-icon-text">
+                                            Fev 2019
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    The principal is pretty simple, first I recreated a simple unity <hli>spline editor</hli>. It’s based on the <a href="https://www.youtube.com/@SebastianLague" target="_blank">Sebsatian Lague</a> tutorial series about bezier curves.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    Then I look up on a conference named <a href="https://youtu.be/o9RK6O2kOKo" target="_blank">“Unite 2015 - A coder's guide to spline-based procedural geometry”</a> in order to learn the algorithm behind <hli>generating meshes at runtime</hli> and spline based geometries.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    The logic behind is pretty simple, in order to create such a <hli>road editor</hli>, we need for our <hli>spline</hli> to have a UP and a RIGHT direction. Then we need to <hli>generate points</hli> on the spline that are evenly spaced <dli>(the point structure need to hold the up and right directions, so we can use it for the road)</dli>.
+                                </div>
+                                <div class="content-article-main-content-text roboto-text">
+                                    The mesh logic is straight forward from this point, we <hli>generate slices</hli> of our road at places we created our previous <hli>points structure</hli>, finally we have to <hli>join the different road parts</hli> already generated the mesh looks continuous.
+                                </div>
+                                <a class="content-article-main-content-github" href="https://github.com/Girali/Procedural_Road_Editor" target="_blank">
+                                    <div class="content-article-main-content-github-button" data-augmented-ui="tl-round bl-round br-clip">
+                                        <object data="assets/img/icons/github.svg"></object>
+                                        <div class="roboto-text-f">GitHub</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="content-article-main-content-visuals">
+                                <div class="content-article-main-content-visuals-main">
+                                    <video width="1280" height="720" controls>
+                                        <source src="assets/vid/road-editor.webm" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="content-article-main-content-visuals-icons">
+                                    <img class="icons" value="Unity" src="assets/img/icons/unity.svg" width="50" height="50">
+                                    <img class="icons" value="C#" src="assets/img/icons/c-sharp.svg" width="50" height="50">
+                                    <img class="icons" value="GitHub" src="assets/img/icons/github.svg" width="50" height="50">
+                                    <img class="icons" value="It`s a 'tool'" src="assets/img/icons/tool.svg" width="50" height="50">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content-article-box-bars">
+                        <svg id="content-article-box-bar-left" xmlns="http://www.w3.org/2000/svg" width="447" height="2" fill="none" viewBox="0 0 447 2">
+                            <path stroke="#E6AC19" d="M0 1h446.5"/>
+                        </svg>
+                        <svg id="content-article-box-bar-right" xmlns="http://www.w3.org/2000/svg" width="1009" height="33" fill="none" viewBox="0 0 1009 33">
+                            <path stroke="#E6AC19" stroke-dasharray="10 10" d="M0 31.997h71l31-31h907"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

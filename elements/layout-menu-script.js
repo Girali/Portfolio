@@ -1,27 +1,13 @@
 OpenMenu("#layout-menu-side-bar");
+OpenMenu("#layout-menu-side");
 OpenMenu("#layout-menu-side-items");
 
-loadSubMenus = LoadSubMenus;
-
-$("#sub-menu-items").load("elements/sub-menu-projects.html", () => {
-    subMenuContent = $("#sub-menu-items-content").detach();
-});
-
 function LoadSubMenus(open){
-    console.log(open);
-
-    if(currentActiveSection == 3 && open == true){
-        if(subLoaded == false)
-        {
-            subMenuContent.clone().appendTo("#sub-menu-items");
-            subLoaded = true;
-        }
-    }
-    else{
-        if(subLoaded == true)
-        {
-            subMenuContent = $("#sub-menu-items-content").detach();
-            subLoaded = false;
+    if(!inArticle) {
+        if (currentActiveSection == 3 && open == true) {
+            $("#sub-menu-items").removeClass("hide-panel").addClass("active-panel-slow");
+        } else {
+            $("#sub-menu-items").removeClass("active-panel-slow").addClass("hide-panel");
         }
     }
 }
@@ -46,8 +32,8 @@ $(s).mouseenter(function(){
         $("#menu-social-icons").addClass("show");
         $("#menu-social-icons").removeClass("hide");
 
-        $("#sub-menu-items").addClass("show");
-        $("#sub-menu-items").removeClass("hide");
+        $("#sub-menu-items").removeClass("hide-panel").addClass("active-panel-slow");
+
         LoadSubMenus(true);
     }).mouseleave(function(){
         $("#layout-menu-background-right").removeClass("layout-menu-background-right-open");
@@ -68,10 +54,20 @@ $(s).mouseenter(function(){
         $("#menu-social-icons").addClass("hide");
         $("#menu-social-icons").removeClass("show");
 
-        $("#sub-menu-items").addClass("hide");
-        $("#sub-menu-items").removeClass("show");
+        $("#sub-menu-items").removeClass("hide-panel").addClass("active-panel-slow");
+
         LoadSubMenus(false);
 });
+}
 
-
+function UpdateSubItems(sectionIndex){
+    subSectionIndex = sectionIndex;
+    $(".menu-sub-item").each(function(i, element) {
+        if(i == subSectionIndex){
+            $(element).addClass("active-sub");
+        }
+        else{
+            $(element).removeClass("active-sub");
+        }
+    });
 }
