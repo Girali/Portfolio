@@ -32,8 +32,6 @@ $(s).mouseenter(function(){
         $("#menu-social-icons").addClass("show");
         $("#menu-social-icons").removeClass("hide");
 
-        $("#sub-menu-items").removeClass("hide-panel").addClass("active-panel-slow");
-
         LoadSubMenus(true);
     }).mouseleave(function(){
         $("#layout-menu-background-right").removeClass("layout-menu-background-right-open");
@@ -53,8 +51,6 @@ $(s).mouseenter(function(){
 
         $("#menu-social-icons").addClass("hide");
         $("#menu-social-icons").removeClass("show");
-
-        $("#sub-menu-items").removeClass("hide-panel").addClass("active-panel-slow");
 
         LoadSubMenus(false);
 });

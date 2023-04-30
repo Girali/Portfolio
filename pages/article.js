@@ -1,5 +1,9 @@
 function LoadArticleInteraction(){
     resizeArticle = ResizeContent;
+    $('#content-article-container').tilt({
+        speed: 1500,
+        maxTilt: 1
+    })
 
     $('.content-article-button-selector').each(function(i, element) {
         $(element).click(function(){

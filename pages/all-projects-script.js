@@ -1,4 +1,25 @@
+
+let allContentDate = [];
+let lastDate = {
+    date: 2023,
+    pos: 30
+};
+
 function LoadInterfaceInteraction() {
+    allContentDate = [];
+    lastDate = {
+        date: 2023,
+        pos: 30
+    };
+
+    $('.content-box').each(function(i, element) {
+        $(element).tilt({
+            speed: 2000,
+            maxTilt: 3,
+            scale: 1.05
+        })
+    });
+
     fetch('pages/all-projects.json')
         .then(response => response.json())
         .then(data => {
@@ -21,11 +42,37 @@ function LoadInterfaceInteraction() {
             });
 
             LoadContentBox(dataToLoad, 0);
-
         })
         .catch(error => console.error(error));
 
     LoadInteractionAtTheEnd();
+}
+
+onScroll = ChnageTimeLine;
+
+function  AddDateElement(element, date){
+    const position = $(element).offset();
+    const topPosition = position.top;
+
+    if(lastDate.date != date) {
+        allContentDate.push({
+            date: lastDate.date,
+            pos: lastDate.pos
+        });
+    }
+
+    lastDate = {
+        date: date,
+        pos: topPosition
+    };
+
+
+    if(date === 2017){
+        allContentDate.push({
+            date: lastDate.date,
+            pos: lastDate.pos
+        });
+    }
 }
 
 function LoadContentBox(data, index){
@@ -42,6 +89,7 @@ function LoadContentBox(data, index){
         let image = article.image;
         let icons = article.icons;
         let onClick = "LoadArticle('Article-" + title + "', '" + path + "', '#content')";
+        AddDateElement(element, article.year);
 
         $(element).find('.content-box-title').text(title);
         $(element).find('.content-box-content-details-title').text(subTitle);
@@ -80,11 +128,45 @@ function LoadContentBox(data, index){
                 });
             });
         });
+
     }
 }
 
+
+function map_range(value, low1, high1, low2, high2) {
+    return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+}
+
+function ChnageTimeLine(t,pos){
+    let newT = map_range(t,0 , 100 , 5 , 95);
+    $("#time-line-indicator").css("top", newT + "%");
+    if(pos > 300){
+        $("#time-line").css("height", "85vh").css("top", "10vh");
+    }
+    else{
+        $("#time-line").css("height", "60vh").css("top", "37vh");
+    }
+
+
+    let year = "";
+    for(i = 0; i < allContentDate.length; i++){
+        if(pos < allContentDate[i].pos){
+            year = allContentDate[i].date;
+            break;
+        }
+    }
+
+    if(t == 100)
+        year = allContentDate[allContentDate.length-1].date;
+
+
+    $("#time-line-indicator-text").text(year);
+}
+
 function LoadInteractionAtTheEnd(){
+
     $('.content-box').each(function(i, element) {
+
         $(element).mouseenter(function(){
             $(element).find('.content-box-title').removeClass("show");
             $(element).find('.content-box-content').removeClass("content-retracted");

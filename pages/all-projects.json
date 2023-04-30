@@ -6,6 +6,7 @@
       "description": "In Vandalhalla you play to bring back amusement in a near future where fun is forbidden.\n          You will bring back the fun in the city by participating in illegal fights.\n          This fights highly recommends you to destroy the environment, kill your opponents and control capture points.",
       "path": "articles/vandalhalla.html",
       "image": "assets/img/articles/vandalhalla_1.jpg",
+      "year": 2021,
       "icons": [
         {
           "title": "Unity",
@@ -35,6 +36,7 @@
       "description": "A little arcade game, like Overcooked where we are working at a French bakery.",
       "path": "articles/le-french-bakery.html",
       "image": "assets/img/articles/le-french-bakery_1.png",
+      "year": 2023,
       "icons": [
         {
           "title": "Unity",
@@ -56,6 +58,7 @@
       "description": "A game were we are a delivery driver in a Russian post-apocalyptic world. And our only friends are vodka and mechanics.",
       "path": "articles/vodka-motors.html",
       "image": "assets/img/articles/vodka-motors_1.png",
+      "year": 2022,
       "icons": [
         {
           "title": "Unity",
@@ -77,6 +80,7 @@
       "description": "Dungeon and Dragon but better, is VR and PC tower defence. A totally refreshed version of the board game.",
       "path": "articles/DND.html",
       "image": "assets/img/articles/DADBB_1.jpg",
+      "year": 2020,
       "icons": [
         {
           "title": "Unity",
@@ -102,6 +106,7 @@
       "description": "Pick Velocity is an Arcade game, made to challenge myself on a 1-day project with a new game engine.",
       "path": "articles/velocity-pick.html",
       "image": "assets/img/articles/velocity-pick_1.jpg",
+      "year": 2020,
       "icons": [
         {
           "title": "Godot",
@@ -123,6 +128,7 @@
       "description": "F.U.N. Game is an old school type online FPS, based on a capture the flag game mode.",
       "path": "articles/fun-game.html",
       "image": "assets/img/articles/fun-game_1.jpg",
+      "year": 2019,
       "icons": [
         {
           "title": "Unity",
@@ -148,6 +154,7 @@
       "description": "Procedural Urbanization is a VR urban architecture tool made to create procedurally generated cities.",
       "path": "articles/urban.html",
       "image": "assets/img/articles/proc-urb_1.jpg",
+      "year": 2019,
       "icons": [
         {
           "title": "Unity",
@@ -169,6 +176,7 @@
       "description": "Darkest Room is an escape game, with a PS1 visual style. You need to escape the room before the light goes out forever for you.",
       "path": "articles/darkest-room.html",
       "image": "assets/img/articles/darkest-room_1.jpg",
+      "year": 2018,
       "icons": [
         {
           "title": "Unity",
@@ -190,6 +198,7 @@
       "description": "MEME World is an arcade runner, where the player goal is to avoid falling into the void.",
       "path": "articles/meme-world.html",
       "image": "assets/img/articles/meme-world_1.jpg",
+      "year": 2018,
       "icons": [
         {
           "title": "Unity",
@@ -211,6 +220,7 @@
       "description": "Super Vega Missyl Racing is an arcade racing game based on a true story of a legend, “Étienne le Bolideur”.",
       "path": "articles/vega-missyl.html",
       "image": "assets/img/articles/vega-missyl_1.jpg",
+      "year": 2018,
       "icons": [
         {
           "title": "Unity",
@@ -232,6 +242,7 @@
       "description": "Space Velocity is an arcade game, where the player controls a spaceship that accumulate more and more speed over time.",
       "path": "articles/space-velocity.html",
       "image": "assets/img/articles/space-velocity_1.jpg",
+      "year": 2017,
       "icons": [
         {
           "title": "Unity",
@@ -257,6 +268,7 @@
       "description": "Click n’ Mine is a Cookie Clicker style game. In Click n’ Mine you incarnate a worker from the Red Army and recreate capitalism.",
       "path": "articles/click-mine.html",
       "image": "assets/img/articles/click-mine_1.jpg",
+      "year": 2017,
       "icons": [
         {
           "title": "Python",
@@ -274,6 +286,7 @@
       "description": "A networked physics system with client side prediction on physics, created specially for Vandalhalla in order to reduce perceived latency.",
       "path": "articles/phys.html",
       "image": "assets/img/articles/predict-client-phys_1.png",
+      "year": 2021,
       "icons": [
         {
           "title": "Unity",
@@ -295,6 +308,7 @@
       "description": "I little fun project that I coded in June for a week. I wanted to reproduce the fog of war mechanic from games like Warcraft or Starcraft and the result is here.",
       "path": "articles/fog.html",
       "image": "assets/img/articles/fog_1.png",
+      "year": 2022,
       "icons": [
         {
           "title": "Unity",
@@ -316,6 +330,7 @@
       "description": "The portal system was not static, in fact, Datum is a VR game project where the player can summon portals at his hands position...",
       "path": "articles/datum-portal.html",
       "image": "assets/img/articles/datum_1.png",
+      "year": 2022,
       "icons": [
         {
           "title": "Unity",
@@ -337,6 +352,7 @@
       "description": "It’s a Unity editor interface for creating content like items, NPCs, weapons or drops.",
       "path": "articles/satanass-ui.html",
       "image": "assets/img/articles/satanass-ui_1.png",
+      "year": 2021,
       "icons": [
         {
           "title": "Unity",
@@ -362,6 +378,7 @@
       "description": "Boltlorant is a series of tutorial videos about the creation of a networked video game based on the game Valorant from Riot Games.",
       "path": "articles/boltlorant.html",
       "image": "assets/img/articles/boltlorant_1.png",
+      "year": 2021,
       "icons": [
         {
           "title": "Unity",
@@ -391,6 +408,7 @@
       "description": "This Tree JS project was an overview of the API and a way from me to do something visually appealing.",
       "path": "articles/tree-js.html",
       "image": "assets/img/articles/webgl_1.png",
+      "year": 2020,
       "icons": [
         {
           "title": "Java Script",
@@ -408,6 +426,7 @@
       "description": "A student project which aim to create a mesh morphing algorithm.",
       "path": "articles/mesh-morph.html",
       "image": "assets/img/articles/morph_2.png",
+      "year": 2019,
       "icons": [
         {
           "title": "Unity",
@@ -433,6 +452,7 @@
       "description": "Created to help the level designers to create faster and better level for an arcade racing game named “Vega Missyl Racing Game”.",
       "path": "articles/road-editor.html",
       "image": "assets/img/articles/road_edit_1.jpg",
+      "year": 2019,
       "icons": [
         {
           "title": "Unity",
@@ -458,6 +478,7 @@
       "description": "My first take on procedural generation was this massive landscape generated.",
       "path": "articles/terrain-gen.html",
       "image": "assets/img/articles/terrain_gen_4.jpg",
+      "year": 2018,
       "icons": [
         {
           "title": "Unity",
@@ -483,6 +504,7 @@
       "description": "My first realistic render, it's heavily inspired by the sci-fi genera.",
       "path": "articles/render.html",
       "image": "assets/img/articles/art_0.jpg",
+      "year": 2023,
       "icons": [
         {
           "title": "Blender",
@@ -491,6 +513,64 @@
         {
           "title": "Photoshop",
           "image": "assets/img/icons/photoshop.svg"
+        }
+      ]
+    },
+    {
+      "title": "Audio conception",
+      "sub_title": "Music and sound design",
+      "description": "A brief resume of my music and sound design, done over the course of 2 years.",
+      "path": "articles/audio.html",
+      "image": "assets/img/articles/music_1.jpg",
+      "year": 2022,
+      "icons": [
+        {
+          "title": "Audacity",
+          "image": "assets/img/icons/audacity.svg"
+        },
+        {
+          "title": "FL Studio",
+          "image": "assets/img/icons/fl-studio.svg"
+        }
+      ]
+    },
+    {
+      "title": "Character design",
+      "sub_title": "Character design",
+      "description": "Some of my character design made during my Art Master degree",
+      "path": "articles/cara-design.html",
+      "image": "assets/img/articles/art_7.png",
+      "year": 2022,
+      "icons": [
+        {
+          "title": "Hand drawn",
+          "image": "assets/img/icons/drawing.svg"
+        },
+        {
+          "title": "Pinterest",
+          "image": "assets/img/icons/pinterest.svg"
+        }
+      ]
+    },
+    {
+      "title": "Landscapes",
+      "sub_title": "My love for landscapes",
+      "description": "A really brief resume of landscapes and mood boards that feature landscapes.",
+      "path": "articles/landscapes.html",
+      "image": "assets/img/articles/art_4.png",
+      "year": 2022,
+      "icons": [
+        {
+          "title": "Photoshop",
+          "image": "assets/img/icons/photoshop.svg"
+        },
+        {
+          "title": "Illustrator",
+          "image": "assets/img/icons/illustrator.svg"
+        },
+        {
+          "title": "Pinterest",
+          "image": "assets/img/icons/pinterest.svg"
         }
       ]
     }

@@ -16,6 +16,8 @@ let isBackAction = false;
 let lastRegistredPage = null;
 let registredPage = null;
 
+let onScroll = null;
+
 $(document).ready(function(){
     $('#loader-layout-menu').load('elements/layout-menu.html', () => {
         UpdateMenuItemsIndex(3);
@@ -25,16 +27,26 @@ $(document).ready(function(){
         $(this).addClass("hide-panel").removeClass("active-panel");
     })
 
+    $("#img-preview-vertical").click( function (){
+        $(this).addClass("hide-panel").removeClass("active-panel");
+    })
+
     titleLoaded = false;
     //LoadArticle("Article-Vandalhalla", 'articles/vandalhalla.html', '#content');
     //LoadContent("BestProjects", 'pages/best-projects.html', '#content', 1)
     LoadContent("AboutMe",'pages/about-me.html', '#content' , 0);
 
-
     window.onpopstate = function(event) {
         event.preventDefault();
         isBackAction = true;
         lastRegistredPage.Load();
+    };
+
+    window.onscroll = function() {
+        const totalPageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const currentScrollPosition = window.scrollY;
+        const percentageScrolled = (currentScrollPosition / totalPageHeight) * 100;
+        onScroll(percentageScrolled, currentScrollPosition);
     };
 });
 
@@ -97,7 +109,6 @@ function SetCarouselIndex(element, oldIndex, index){
 }
 
 function LoadPreviewImgInteract(){
-
     $('.previewable').each(function(i, element) {
         $(element).click(function() {
             $("#img-preview").addClass("active-panel").removeClass("hide-panel");
@@ -105,6 +116,12 @@ function LoadPreviewImgInteract(){
         })
     });
 
+    $('.previewable-vertical').each(function(i, element) {
+        $(element).click(function() {
+            $("#img-preview-vertical").addClass("active-panel").removeClass("hide-panel");
+            $("#img-preview-vertical").find("img").attr("src", $(element).attr("src"));
+        })
+    });
 }
 
 function OnLoadPageStart(){
@@ -118,13 +135,19 @@ function OnLoadPageEnd(){
 
     if(inArticle === true){
         const video = document.querySelector('video');
-        video.addEventListener('load', resizeArticle);
-        video.addEventListener('loadeddata', resizeArticle);
+        if(video != null) {
+            video.addEventListener('load', resizeArticle);
+            video.addEventListener('loadeddata', resizeArticle);
+        }
 
         let article = $("#content-article");
         $('#main-title').text($(article).attr('value'));
 
         SetCarouselInteraction();
+    }
+
+    if(currentActiveSection === 0){
+        LoadAboutMeInteractions();
     }
 
     LoadPreviewImgInteract();

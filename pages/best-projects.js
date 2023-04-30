@@ -1,6 +1,17 @@
 function LoadBestProjectsInteraction()
 {
+    $("#best-proj-content-main").tilt({
+        speed: 1500,
+        maxTilt: 1
+    })
+
     $('.best-proj-content-sub').each(function (i, element) {
+        $(element).tilt({
+            speed: 1500,
+            maxTilt: 1,
+            scale: 1.05
+        })
+
         $(element).mouseenter(function () {
             $(element).find('.best-proj-content-sub-box').addClass("best-proj-sub-open");
 
