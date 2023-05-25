@@ -2,7 +2,7 @@ function LoadArticleInteraction(){
     resizeArticle = ResizeContent;
     $('#content-article-container').tilt({
         speed: 1500,
-        maxTilt: 1
+        maxTilt: 0.5
     })
 
     $('.content-article-button-selector').each(function(i, element) {

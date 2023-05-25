@@ -11,6 +11,7 @@
     --blue-900-90: rgba(12, 21, 32, 90%);
     --blue-900: rgb(12, 21, 32);
     --blue-800: rgb(11, 29, 52);
+    --blue-800-90: rgba(11, 29, 52, 90%);
     --blue-800-80: rgba(11, 29, 52, 80%);
     --blue-800-75: rgba(11, 29, 52, 75%);
     --blue-800-50: rgba(11, 29, 52, 50%);
@@ -131,18 +132,18 @@ body::-webkit-scrollbar {
 
 #layout-menu-upper{
     width: 100%;
-    height: 5vh;
+    height: 35px;
     display: flex;
     flex-direction: row;
 }
 
 #content{
     padding-top: 10px;
-    padding-left: 90px;
+    padding-left: 95px;
 }
 
 #content-main{
-    padding-left: 5vh;
+    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -219,39 +220,37 @@ body::-webkit-scrollbar {
 
 #about-me-content{
     margin-top: 1rem;
-    position: relative;
-    height: 68vh;
-    width: 60vw;
-    margin-left: 2%;
-    margin-right: 4%;
+    height: auto;
+    width: clamp(300px,100%,800px);
 }
 
 #about-me-content-title{
-    padding-top: 1vh;
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 8vw;
+    height: 8rem;
+    font-size: 8vw;
 }
 
 #about-me-footer{
-    flex-wrap: wrap;
-    margin-top: 10%;
-    margin-right: 10%;
-    align-self: flex-end;
+    margin-bottom: 28px;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 #about-me-footer-socials{
+    margin-right: 1rem;
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    margin-right: 8vw;
+    align-content: flex-end;
 }
 
 .blue-400-text{
     color: var(--blue-400);
+    font-size: clamp(.7rem,3vw,1.2rem);
 }
 
 hil{
@@ -272,7 +271,7 @@ dli{
 
 .quote-text{
     color: var(--orange-500);
-    font-size: 2.5vh;
+    font-size: clamp(1rem,3vw,1.5rem);
 }
 
 #about-me-content-text{
@@ -280,30 +279,29 @@ dli{
 }
 
 #about-me-footer-buttons{
-    margin-top: 2.5vh;
-
+    width: clamp(6rem, 10vw, 10rem);
+    height: clamp(20px,4vw,30px);
 }
 
 .dark-blue-text{
-    margin-left: 15%;
+    margin-left: 0.5rem;
+    font-size: clamp(20px, 2vw, 40px);
     color: var(--blue-800);
-    font-size: 1.5rem;
 }
 
 #about-me-footer-underbar{
     position: absolute;
-    left: max(-40vw , -574px);
-    top: 1.25vw;
-    width: 40vw;
-    max-width: 574px;
+    right: clamp(-6rem, -10vw, -10rem);
+    top: calc(clamp(20px,4vw,30px) / 2);
+    height: 31px;
 }
 
 #about-me-footer-button-resume{
+    width: 100%;
+    height: 100%;
+
     position: relative;
     display: flex;
-    width: 13vw;
-    height: 2.5vw;
-
     pointer-events: all;
     transition: all 0.5s ease-in-out;
 }
@@ -346,24 +344,21 @@ dli{
     --aug-border-all: 2px;
     --aug-border-bg: linear-gradient(267.46deg, var(--orange-500) -2.23%, var(--orange-600) 132.13%);
 
-    --aug-bl: 10px;
-    --aug-tr: 15px;
-    --aug-br: 1vw;
-    --aug-tl: 10px;
-    --aug-t: 5px;
+    --aug-tr1: 3px;
+    --aug-tr-inset2: 20px;
+    --aug-tr2: 7px;
 
-    --aug-t-center: 35%;
-    --aug-t-extend1: 40%;
+    --aug-bl: 7px;
+    --aug-br: 7px;
+    --aug-tl: 7px;
+
 }
 
 #about-me-content-box{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
 
     background: radial-gradient(192.94% 402.4% at 0% 0%, var(--blue-900) 0%, var(--blue-700) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 
@@ -721,10 +716,10 @@ loader-layout-menu{
 #menu-button{
     z-index: 3;
 
-    background: var(--blue-800-80);
+    background: var(--blue-800-90);
 
-    width: 80px;
-    height: 5vh;
+    width: 50px;
+    height: 35px;
 
     --aug-border: initial;
     --aug-border-all: 1px;
@@ -737,16 +732,16 @@ loader-layout-menu{
     justify-content: center;
     align-items: center;
 
-    width: 92vw;
-    height: 5vh;
+    width: calc(100vw - 75px);
+    height: 35px;
 
-    background: var(--blue-800-80);
+    background: var(--blue-800-90);
 
     --aug-border: initial;
     --aug-border-all: 1px;
     --aug-border-bg: #E6AC19;
     --aug-border-left: 0px;
-    --aug-br: 33px;
+    --aug-br: 15px;
 }
 #layout-menu-side{
     z-index: 3;
@@ -757,16 +752,16 @@ loader-layout-menu{
     flex-direction: column;
     align-items: center;
 
-    width: 80px;
+    width: 50px;
     height: 90vh;
 
-    background: var(--blue-800-80);
+    background: var(--blue-800-90);
 
     --aug-border: initial;
     --aug-border-all: 1px;
     --aug-border-bg: var(--orange-500);
     --aug-border-top: 0px;
-    --aug-bl: 50px;
+    --aug-bl: 25px;
 }
 
 .content-box-grow{
@@ -775,8 +770,8 @@ loader-layout-menu{
 
 #content-title{
     height: 170px;
-    padding-top: 10vh;
-    padding-left: 5vh;
+    margin-top: 35px;
+    padding-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -786,10 +781,10 @@ loader-layout-menu{
 #content-title-title{
     z-index: 2;
     cursor: pointer;
-    width: 75%;
+    width: 100%;
     height: 100%;
-    padding-right: 40px;
     position: relative;
+    font-size: clamp(3.2em, 10vw ,10vw);
 }
 
 .title-glow-orange{
@@ -832,19 +827,12 @@ loader-layout-menu{
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
     text-align: right;
-    font-size: 8vw;
     filter: blur(12.5px);
     opacity: 0.5;
 }
 
 .about-me-title{
-    transform: translateZ(500px);
-
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    position: absolute;
-    z-index: 2;
+    position: relative;
     text-align: center;
 
     color: var(--orange-900);
@@ -852,25 +840,19 @@ loader-layout-menu{
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
 
-    font-size: 8vw;
 }
 
 .about-me-title-glow{
-    transform: translateZ(500px);
-
-    width: 100%;
-    left: 0px;
-    right: 0px;
-    text-align: center;
     position: absolute;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
+    text-align: center;
     color: transparent;
 
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
-
-    font-size: 8vw;
 
     filter: blur(12.5px);
     opacity: 0.5;
@@ -884,31 +866,28 @@ loader-layout-menu{
     -webkit-background-clip: text;
     -webkit-text-stroke: 2px transparent;
     text-align: right;
-    font-size: 8vw;
 }
 
 #content-title-sub{
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 45px;
     text-align: right;
-    font-size: 1.4vw;
+    font-size: clamp(.7rem,2vw,2vw)
 }
 
 #content-title-bar{
     position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 70%;
-    max-width: 1085px;
+    right: -40px;
+    bottom: -10px;
     display: flex;
-
+    width: 1085px;
 }
 
 #layout-menu-side-items{
     z-index: 5;
     position: absolute;
-    top: 5vh;
+    top: 35px;
     height: 90vh;
 }
 
@@ -920,7 +899,7 @@ loader-layout-menu{
 }
 
 .menu-icons-content img{
-    width: 80px;
+    width: 35px;
 }
 
 .resume-button-text{
@@ -985,6 +964,8 @@ loader-layout-menu{
 
 .menu-social-orange{
     margin-left: 5px;
+    height: clamp(30px,5vw,40px);
+    width: clamp(30px,5vw,40px);
     display: flex;
     align-items: center;
     pointer-events: all;
@@ -997,6 +978,10 @@ loader-layout-menu{
     transition: all 0.5s ease-in-out;
     opacity: 1;
     filter: drop-shadow(0 0 10px var(--orange-glow-fix))invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
+}
+
+.menu-social-orange img{
+    height: clamp(20px,100%,40px);
 }
 
 .menu-social{
@@ -1013,6 +998,11 @@ loader-layout-menu{
     transition: all 0.5s ease-in-out;
     opacity: 1;
     filter: drop-shadow(0 0 10px var(--blue-glow-fix)) invert(52%) sepia(39%) saturate(1456%) hue-rotate(188deg) brightness(94%) contrast(96%);
+}
+
+.menu-social img{
+    width: 50px;
+    height: 50px;
 }
 
 .menu-sub-item{
@@ -1057,6 +1047,7 @@ loader-layout-menu{
     pointer-events: all;
     transition: all 0.3s ease-in;
     margin-top: 1rem;
+    margin-left: 7.5px;
     opacity: 0.5;
     filter: invert(88%) sepia(22%) saturate(5324%) hue-rotate(348deg) brightness(94%) contrast(92%);
     transition: all 0.5s ease-in-out;
@@ -1087,15 +1078,16 @@ loader-layout-menu{
     pointer-events: all;
 
     position: absolute;
-    height: 95vh;
+    height: calc(90vh + 35px);
     top: 0px;
-    left: 80px;
+    left: 50px;
 
     --aug-border: initial;
     --aug-border-all: 1px;
     --aug-border-bg: var(--orange-500);
     --aug-border-left: 0px;
-    --aug-tr:5vh;
+    --aug-tr:35px;
+    --aug-r: 10px;
     --aug-r-center: 30%;
     --aug-r-extend1: 20vh;
 
@@ -1103,17 +1095,17 @@ loader-layout-menu{
 
 .layout-menu-side-items-close{
     transition: width 0.5s ease-in-out;
-    width: calc(80px + 5vh);
+    width: calc(50px + 5vh);
 }
 
 .layout-menu-side-items-open{
     transition: width 0.5s ease-in-out;
-    width: calc(80px + 25vh);
+    width: calc(50px + 25vh);
 }
 
 .layout-menu-side-bar-close{
     transition: width 0.5s ease-in-out;
-    width: 5vh;
+    width: 35px;
 }
 
 .layout-menu-side-bar-open{
@@ -1133,20 +1125,21 @@ loader-layout-menu{
 
 #layout-menu-background-right{
     position: absolute;
-    height: 95vh;
+    height: calc(90vh + 35px);
     top: 0px;
-    left: 80px;
+    left: 50px;
 
-    background: var(--blue-800-80);
+    background: var(--blue-800-90);
 
-    --aug-tr:5vh;
+    --aug-tr:35px;
+    --aug-r: 10px;
     --aug-r-center: 30%;
     --aug-r-extend1: 20vh;
 }
 
 .layout-menu-background-right-close{
     transition: all 0.5s ease-in-out;
-    width: 5vh;
+    width: 35px;
 }
 
 .layout-menu-background-right-open{
@@ -1154,10 +1147,20 @@ loader-layout-menu{
     width: 25vh;
 }
 
+@media (max-width: 768px) {
+    #content-title-bar {
+        display: none;
+    }
+
+    #about-me-footer-underbar {
+        display: none;
+    }
+}
+
 #best-proj-content{
-    height: 68vh;
     width: 100%;
-    margin-right: 2%;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1165,12 +1168,9 @@ loader-layout-menu{
 }
 
 #best-proj-content-main{
-    margin-left: 2%;
     filter: drop-shadow(0 0 10px var(--neonblue-50));
-    min-width: 450px;
-    max-width: 1060px;
+    width: clamp(300px,100%,800px);
     min-height: 650px;
-    width: 100%;
 }
 
 .best-proj-main-title{
@@ -1181,8 +1181,7 @@ loader-layout-menu{
 .best-proj-main-bar{
     position: absolute;
     top: 33px;
-    right: 27%;
-    width: 65%;
+    width: 652px;
 }
 
 .best-proj-main-title-text{
@@ -1192,6 +1191,7 @@ loader-layout-menu{
 }
 
 #best-proj-content-main-box img {
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1199,8 +1199,10 @@ loader-layout-menu{
 }
 
 #best-proj-content-main-box{
+    position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -1210,19 +1212,19 @@ loader-layout-menu{
     --aug-border-all: 2px;
     --aug-border-bg:  linear-gradient(180deg, var(--blue-500) 0%, var(--neonblue) 100.12%);
 
-    --aug-bl: 33px;
-    --aug-br: 50px;
-    --aug-tl: 33px;
-    --aug-l: 15px;
+    --aug-bl: 15px;
+    --aug-br: 15px;
+    --aug-tl: 15px;
+    --aug-l: 5px;
 
     --aug-l-center: 60%;
     --aug-l-extend1: 30%;
 
     --aug-round-tr2: initial;
     --aug-clip-tr1: initial;
-    --aug-tr1: 33px;
+    --aug-tr1: 15px;
     --aug-tr-extend1: 20%;
-    --aug-tr2: 33px;
+    --aug-tr2: 15px;
 }
 
 
