@@ -1,88 +1,92 @@
 <div id="layout-menu">
   <script src="elements/layout-menu-script.js"></script>
   <div id="layout-menu-upper">
-    <div id="menu-button" data-augmented-ui="tl-round"></div>
+    <div id="menu-button" data-augmented-ui="tl-round">
+      <img class="layout-menu-icon" src="assets/img/icons/menu.svg" >
+    </div>
     <div id="menu-header" data-augmented-ui="tr-round br-clip">
       <div id="main-title" class="iceland-text ">All projects</div>
     </div>
   </div>
-  <div id="layout-menu-side" data-augmented-ui="bl-clip"></div>
-  <div id="layout-menu-side-bar" class="layout-menu-side-bar-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
-  <div id="layout-menu-background-right" class="layout-menu-background-right-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
-  <div id="layout-menu-side-items" class="layout-menu-side-items-close">
-    <div class="menu-icons">
-      <div class="menu-icons-content" onclick="LoadContent('AboutMe','pages/about-me.html','#content', 0)">
-        <img src="assets/img/icons/profil.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">ABOUT ME</div>
+  <div id="layout-menu-side-content">
+    <div id="layout-menu-side" data-augmented-ui="bl-clip"></div>
+    <div id="layout-menu-side-bar" class="layout-menu-side-bar-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
+    <div id="layout-menu-background-right" class="layout-menu-background-right-close" data-augmented-ui="tr-clip r-clip-y br-round"></div>
+    <div id="layout-menu-side-items" class="layout-menu-side-items-close">
+      <div class="menu-icons">
+        <div class="menu-icons-content" onclick="LoadContent('AboutMe','pages/about-me.html','#content', 0)">
+          <img src="assets/img/icons/profil.svg">
+          <div class="menu-icons-text iceland-text hide-quick">ABOUT ME</div>
+        </div>
       </div>
-    </div>
-    <div class="menu-icons">
-      <div class="menu-icons-content" onclick="LoadContent('BestProjects','pages/best-projects.html','#content', 1)">
-        <img src="assets/img/icons/fire.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">BEST PROJECTS</div>
+      <div class="menu-icons">
+        <div class="menu-icons-content" onclick="LoadContent('BestProjects','pages/best-projects.html','#content', 1)">
+          <img src="assets/img/icons/fire.svg">
+          <div class="menu-icons-text iceland-text hide-quick">BEST PROJECTS</div>
+        </div>
       </div>
-    </div>
-    <div class="menu-icons">
-      <div class="menu-icons-content" onclick="LoadContent('Portfolio','pages/portfolio.html','#content', 2)">
-        <img src="assets/img/icons/images.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">PORTFOLIO</div>
+      <div class="menu-icons">
+        <div class="menu-icons-content" onclick="LoadContent('Portfolio','pages/portfolio.html','#content', 2)">
+          <img src="assets/img/icons/images.svg">
+          <div class="menu-icons-text iceland-text hide-quick">PORTFOLIO</div>
+        </div>
       </div>
-    </div>
-    <div class="menu-icons">
-      <div class="menu-icons-content" onclick="LoadContent('AllProjects','pages/all-projects.html','#content', 3)">
-        <img src="assets/img/icons/bag.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">PROJECTS</div>
+      <div class="menu-icons">
+        <div class="menu-icons-content" onclick="LoadContent('AllProjects','pages/all-projects.html','#content', 3)">
+          <img src="assets/img/icons/bag.svg">
+          <div class="menu-icons-text iceland-text hide-quick">PROJECTS</div>
+        </div>
       </div>
-    </div>
-    <div id="sub-menu-items" class="hide-panel">
-      <div id="sub-menu-items-content" >
-        <script src="elements/sub-menu-projects-script.js"></script>
+      <div id="sub-menu-items" class="hide-panel">
+        <div id="sub-menu-items-content" >
+          <script src="elements/sub-menu-projects-script.js"></script>
 
-        <div class="menu-sub-item active-sub" onclick="UpdateSubItems(0), SortItems('all')">
-          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
-          <div class="menu-sub-item-text iceland-text" >All</div>
-        </div>
-        <div class="menu-sub-item"  onclick="UpdateSubItems(1), SortItems('technical')">
-          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
-          <div class="menu-sub-item-text iceland-text" >Technical</div>
-        </div>
-        <div class="menu-sub-item"  onclick="UpdateSubItems(2), SortItems('games')">
-          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
-          <div class="menu-sub-item-text iceland-text" >Games</div>
-        </div>
-        <div class="menu-sub-item"  onclick="UpdateSubItems(3), SortItems('art')">
-          <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
-          <div class="menu-sub-item-text iceland-text" >Art</div>
+          <div class="menu-sub-item active-sub" onclick="UpdateSubItems(0), SortItems('all')">
+            <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+            <div class="menu-sub-item-text iceland-text" >All</div>
+          </div>
+          <div class="menu-sub-item"  onclick="UpdateSubItems(1), SortItems('technical')">
+            <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+            <div class="menu-sub-item-text iceland-text" >Technical</div>
+          </div>
+          <div class="menu-sub-item"  onclick="UpdateSubItems(2), SortItems('games')">
+            <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+            <div class="menu-sub-item-text iceland-text" >Games</div>
+          </div>
+          <div class="menu-sub-item"  onclick="UpdateSubItems(3), SortItems('art')">
+            <img class="menu-sub-item-icon" src="assets/img/element/anchor.svg" >
+            <div class="menu-sub-item-text iceland-text" >Art</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="menu-icons">
-      <a class="menu-icons-content" href="archive/archive.html" target="_blank">
-        <img src="assets/img/icons/archives.svg" width="40" height="40">
-        <div class="menu-icons-text iceland-text hide-quick">ARCHIVE</div>
+      <div class="menu-icons">
+        <a class="menu-icons-content" href="archive/archive.html" target="_blank">
+          <img src="assets/img/icons/archives.svg" width="40" height="40">
+          <div class="menu-icons-text iceland-text hide-quick">ARCHIVE</div>
+        </a>
+      </div>
+      <a id="menu-resume-button" class="hide aug-blueneon-shadow" href="assets/resume.pdf" target="_blank">
+          <div class="resume-button" data-augmented-ui="tl-round bl-round br-clip">
+            <div class="resume-button-text iceland-text">RESUME</div>
+          </div>
       </a>
-    </div>
-    <a id="menu-resume-button" class="hide aug-blueneon-shadow" href="assets/resume.pdf" target="_blank">
-        <div class="resume-button" data-augmented-ui="tl-round bl-round br-clip">
-          <div class="resume-button-text iceland-text">RESUME</div>
-        </div>
-    </a>
-    <div id="menu-social-icons" class="hide">
-      <a class="menu-social" href="https://github.com/Girali" target="_blank">
-        <img src="assets/img/icons/github.svg" width="65" height="65">
-      </a>
-      <a class="menu-social" href="https://www.youtube.com/channel/UCCgDnOc_IjYRe_KpJ68oZjQ"  target="_blank">
-        <img src="assets/img/icons/youtube.svg" width="55" height="55">
-      </a>
-      <a class="menu-social" href="https://store.steampowered.com/app/1662270/Vandalhalla/" target="_blank">
-        <img src="assets/img/icons/steam.svg" width="55" height="55">
-      </a>
-      <a class="menu-social" href="https://www.instagram.com/sandstorm_gamestudio/?hl=fr" target="_blank">
-        <img src="assets/img/icons/instagram.svg"  width="55" height="55">
-      </a>
-      <a class="menu-social" href="https://twitter.com/SandstormGames1" target="_blank">
-        <img src="assets/img/icons/twitter.svg" width="52" height="52">
-      </a>
+      <div id="menu-social-icons" class="hide">
+        <a class="menu-social" href="https://github.com/Girali" target="_blank">
+          <img src="assets/img/icons/github.svg" width="65" height="65">
+        </a>
+        <a class="menu-social" href="https://www.youtube.com/channel/UCCgDnOc_IjYRe_KpJ68oZjQ"  target="_blank">
+          <img src="assets/img/icons/youtube.svg" width="55" height="55">
+        </a>
+        <a class="menu-social" href="https://store.steampowered.com/app/1662270/Vandalhalla/" target="_blank">
+          <img src="assets/img/icons/steam.svg" width="55" height="55">
+        </a>
+        <a class="menu-social" href="https://www.instagram.com/sandstorm_gamestudio/?hl=fr" target="_blank">
+          <img src="assets/img/icons/instagram.svg"  width="55" height="55">
+        </a>
+        <a class="menu-social" href="https://twitter.com/SandstormGames1" target="_blank">
+          <img src="assets/img/icons/twitter.svg" width="52" height="52">
+        </a>
+      </div>
     </div>
   </div>
 </div>

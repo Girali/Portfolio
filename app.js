@@ -10,6 +10,7 @@ let firstTitleLoad = true;
 let inArticle = false;
 let articleLoaded = false;
 let resizeArticle = false;
+let isMobile = false;
 
 let isBackAction = false;
 
@@ -19,6 +20,8 @@ let registredPage = null;
 let onScroll = null;
 
 $(document).ready(function(){
+    isMobile = window.screen.width < 768;
+
     $('#loader-layout-menu').load('elements/layout-menu.html', () => {
         UpdateMenuItemsIndex(3);
     });
