@@ -1237,8 +1237,6 @@ loader-layout-menu{
 
 #best-proj-content-main{
     filter: drop-shadow(0 0 10px var(--neonblue-50));
-    width: clamp(300px,100%,800px);
-    min-height: 650px;
 }
 
 .best-proj-main-title{
@@ -1403,19 +1401,23 @@ loader-layout-menu{
 #best-proj-main-details{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    pointer-events: none;
 }
 
-#best-proj-main-details-buttons{
-    width: 25%;
-    margin-right: 3rem;
+#best-proj-main-details-buttons {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-
-    margin-left: 1rem;
-
+    flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
+    flex-wrap: wrap;
+    pointer-events: auto;
 }
 
 .best-proj-main-details-button-text{
@@ -1431,15 +1433,13 @@ loader-layout-menu{
 }
 
 #best-proj-main-details-button-read{
-    margin-top: 1rem;
     display: flex;
-    width: 100%;
+    width: 200px;
     height: 2.5rem;
-
-    align-self: flex-end;
-
+    margin-left: 2rem;
     pointer-events: all;
     transition: all 0.5s ease-in-out;
+    align-self: flex-end;
 }
 
 #best-proj-main-details-button-read:hover{
@@ -1452,8 +1452,6 @@ loader-layout-menu{
 #best-proj-main-details-text{
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    width: 65%;
     text-align: justify;
 }
 
@@ -1467,11 +1465,48 @@ loader-layout-menu{
     margin-top: 0.5rem;
 }
 
+@media (max-width: 768px) {
+    #best-proj-carousel {
+        width: 300px;
+        height: 220px;
+    }
+
+    #best-proj-content-main {
+        width: 380px;
+        height: 800px;
+    }
+
+    .carousel-container .arrow.next {
+        left: -25px;
+    }
+    .carousel-container .arrow.back {
+        right: -25px;
+    }
+}
+
+@media (min-width: 768px) {
+    #best-proj-carousel {
+        width: 800px;
+        height: 470px;
+    }
+
+    #best-proj-content-main {
+        width: 1100px;
+        height: 680px;
+    }
+
+    .carousel-container .arrow.next {
+        left: -60px;
+    }
+    .carousel-container .arrow.back {
+        right: -60px;
+    }
+}
+
 #best-proj-carousel{
     margin-top: 1rem;
     align-self: center;
-    width: 80%;
-    height: 65%;
+
     filter: drop-shadow(0 0 10px var(--blue-900));
 }
 
@@ -1550,12 +1585,7 @@ loader-layout-menu{
                     drop-shadow( 0px -1px 0px var(--blue-900));
 
 }
-.carousel-container .arrow.next {
-    left: -60px;
-}
-.carousel-container .arrow.back {
-    right: -60px;
-}
+
 
 .arrow img{
     width: 100%;
