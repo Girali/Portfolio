@@ -41,24 +41,42 @@ function LoadArticleInteraction(){
     });
 
     $('.icons').each(function(i, element) {
-        $(element).mouseenter(function(){
-            $('#label').addClass('show');
-            $('#label').removeClass('hide');
+        if($(element).hasClass('left') == false) {
+            $(element).mouseenter(function () {
+                $('#label').addClass('show');
+                $('#label').removeClass('hide');
 
-            var rect = element.getBoundingClientRect();
-            $('#label').css('top', rect.y + 52);
-            $('#label').css('left', rect.x - 130);
+                var rect = element.getBoundingClientRect();
+                $('#label').css('top', rect.y + 52);
+                $('#label').css('left', rect.x - 130);
 
-            $('#label-text').text($(element).attr('value'));
-        }).mouseleave(function(){
-            $('#label').addClass('hide');
-            $('#label').removeClass('show');
-        });
+                $('#label-text').text($(element).attr('value'));
+            }).mouseleave(function () {
+                $('#label').addClass('hide');
+                $('#label').removeClass('show');
+            });
+        }
+    });
+
+    $('.icons').each(function(i, element) {
+        if($(element).hasClass('left')){
+            $(element).mouseenter(function(){
+                $('#label-left').addClass('show');
+                $('#label-left').removeClass('hide');
+
+                var rect = element.getBoundingClientRect();
+                $('#label-left').css('top', rect.y + 52);
+                $('#label-left').css('left', rect.x - 130);
+
+                $('#label-left-text').text($(element).attr('value'));
+            }).mouseleave(function(){
+                $('#label-left').addClass('hide');
+                $('#label-left').removeClass('show');
+            });
+        }
     });
 
     ResizeContent();
-
-
 }
 
 function ResizeContent(){
