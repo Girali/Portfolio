@@ -222,8 +222,8 @@ body::-webkit-scrollbar {
     }
 
     .content-box{
-        min-width: 330px;
-        width: 20rem;
+        width: 325px;
+        margin-top: 1rem;
     }
 
     #time-line-indicator-text {
@@ -233,6 +233,10 @@ body::-webkit-scrollbar {
 
     #about-me-content{
         width: 380px;
+    }
+
+    .content-box-title{
+        bottom: 12px;
     }
 }
 
@@ -245,6 +249,7 @@ body::-webkit-scrollbar {
     .content-box{
         min-width: 330px;
         width: 25rem;
+        margin: 2.5% 0 0 2.5%;
     }
 
     #time-line-indicator-text {
@@ -254,6 +259,10 @@ body::-webkit-scrollbar {
 
     #about-me-content{
         width: clamp(300px,100%,1000px);
+    }
+
+    .content-box-title{
+        bottom: 5px;
     }
 }
 
@@ -265,7 +274,6 @@ body::-webkit-scrollbar {
 
 .content-box{
     z-index: 4;
-    margin: 2.5% 0 0 2.5%;
     aspect-ratio: .95;
     position: relative;
 }
@@ -595,7 +603,6 @@ dli{
 
 .content-box-title{
     position: absolute;
-    bottom: 5px;
     height: 15%;
     width: 100%;
 
@@ -1542,6 +1549,10 @@ loader-layout-menu{
         width: 380px;
         height: 253px;
     }
+
+    .carousel-container .dot {
+        transform: translate(0px,-30px) rotate(45deg);
+    }
 }
 
 @media (min-width: 768px) {
@@ -1570,6 +1581,10 @@ loader-layout-menu{
     }
     .carousel-container .arrow.back {
         right: -60px;
+    }
+
+    .carousel-container .dot {
+        transform: rotate(45deg);
     }
 }
 
@@ -1671,6 +1686,7 @@ loader-layout-menu{
 .carousel-container li:nth-child(1) > .dot {
     margin-right:  15px;
 }
+
 .carousel-container .carousel-content {
     height: 0;
     line-height: 22px;
@@ -1704,7 +1720,6 @@ loader-layout-menu{
     margin-top: 12px;
     z-index: 999;
     margin-right: 12px;
-    transform: rotate(45deg);
 }
 
 .carousel-container .dot:hover {
@@ -2244,6 +2259,20 @@ loader-layout-menu{
     border-radius: 25px;
 }
 
+@media (max-width: 768px) {
+    #content-article-main-content-carousel{
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #content-article-main-content-carousel{
+        width: 65vw;
+        margin-bottom: 5rem;
+    }
+}
+
 .content-article-main-content-visuals-main iframe{
     max-width: 820px;
     max-height: 460px;
@@ -2317,8 +2346,6 @@ loader-layout-menu{
 
 #content-article-main-content-carousel{
     aspect-ratio: 16/9;
-    width: 65vw;
-    margin-bottom: 5rem;
     filter: drop-shadow(0 0 10px black);
 }
 
